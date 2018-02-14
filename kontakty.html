@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Пивоман</title>
+    <meta name="description" content="Пивоман">
+    <meta name="keywords" content="Пивоман">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="preload" href="fonts/OfficinaSansWinC.woff2" as="font">
+    <link rel="preload" href="fonts/OfficinaSansWinCBold.woff2" as="font">
+    <link rel="preload" href="fonts/KellySlab-Regular.woff2" as="font">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <div class="page-container">
+      <header class="page-header">
+        <div class="topnav">
+          <div class="topnav__wrapper">
+            <ul class="topnav__list">
+              <li class="topnav__item">
+                <a href="index.html" class="topnav__link">О нас</a>
+              </li>
+              <li class="topnav__item">
+                <a href="akcii-i-skidki.html" class="topnav__link">Акции и скидки</a>
+              </li>
+              <li class="topnav__item">
+                <a href="korporativnym-klientam.html" class="topnav__link">Корпоративным клиентам</a>
+              </li>
+              <li class="topnav__item">
+                <a href="kontakty.html" class="topnav__link">Контакты</a>
+              </li>
+            </ul>
+            <div class="geo-position">
+              <a href="#" class="geo-position__item" title="г. Омск, ул. Авиагородок, 38">
+                г. Омск, ул. Авиагородок, 38
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="navbar">
+        <div class="navbar__wrapper">
+          <a href="index.html" class="logo navbar__logo" title="Сеть фирменных магазинов - Пивоман">
+            <img src="img/logo.svg" alt="Пивоман - сеть магазинов разливного пива"  class="logo__img" width="140px" height="34px">
+          </a>
+          <div class="navbar__inner">
+            <ul class="navbar__list">
+              <li class="navbar__item">
+                <a href="catalog.html" class="navbar__link"><img src="img/beer-mug.svg" alt="Пиво" class="navbar__link-ico" width="26" height="29">Пиво</a>
+              </li>
+              <li class="navbar__item">
+                <a href="catalog.html" class="navbar__link"><img src="img/corkscrew.svg" alt="Аксессуары" class="navbar__link-ico" width="21" height="29">Аксессуары</a>
+              </li>
+              <li class="navbar__item">
+                <a href="catalog.html" class="navbar__link"><img src="img/nachos.svg" alt="Закуски" class="navbar__link-ico" width="32" height="24">Закуски</a>
+              </li>
+              <!-- <li class="navbar__item">
+                <a href="catalog.html" class="navbar__link"><img src="img/bottle.svg" alt="Наборы" class="navbar__link-ico" width="20" height="29">Наборы</a>
+              </li> -->
+              <li class="navbar__item">
+                <a href="catalog.html" class="navbar__link"><img src="img/soda.svg" alt="Напитки" class="navbar__link-ico" width="16" height="29">Напитки</a>
+              </li>
+            </ul>
+            <label for="site-search" class="text-input text-input--search navbar__search" title="Поиск по катологу">
+              <input id="site-search" type="text" name="search" value="" placeholder="Ищу хорошее пиво">
+            </label>
+          </div>
+          <button class="trigger-ctrl"><span class="trigger-ctrl__inner"></span></button>
+        </div>
+      </div>
+      <div class="citymap">
+        <div class="citymap__sidebar sidebar">
+          <div class="sidebar__wrapper">
+            <div class="sidebar__header">
+              <div class="sidebar__title">
+                Россия
+              </div>
+              <button class="close-btn sidebar__close-btn" title="Закрыть"></button>
+              <label for="map-search" class="text-input text-input--search sidebar__search" title="Поиск по городам">
+                <input id="map-search" type="text" name="map-search" value="" placeholder="Поиск по городам">
+              </label>
+            </div>
+            <ul class="sidebar__list locations">
+              <li class="locations__region">
+                <a href="#" class="locations__link"><span>Омск</span><div class="locations__count" title="Сейчас открыто">15/47</div></a>
+              </li>
+              <li class="locations__region locations__dropdown">
+                <a href="#" class="locations__group-title">Омская обл.</a>
+                <ul class="locations__group">
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Азово</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Береговой</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Большеречье</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Горьковское</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Исилькуль</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Калачинск</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Азово</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Береговой</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Большеречье</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Горьковское</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Исилькуль</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Калачинск</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="locations__region locations__dropdown">
+                <a href="#" class="locations__group-title">Новосибирская обл.</a>
+                <ul class="locations__group">
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Татарск</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="locations__region">
+                <a href="#" class="locations__link"><span>Казань</span><div class="locations__count" title="Сейчас открыто">44/91</div></a>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar__popup popup-panel">
+            <div class="popup-panel__wrapper">
+              <div class="popup-panel__header">
+                <div class="popup-panel__title">
+                  Омск<div class="locations__count" title="Сейчас открыто">15/37</div>
+                </div>
+                <button class="close-btn" title="Закрыть"></button>
+                <label for="adress-search" class="text-input text-input--search sidebar__search" title="Поиск магазинов на карте">
+                  <input id="adress-search" type="text" name="adress-search" value="" placeholder="Поиск по адресу">
+                </label>
+              </div>
+              <ul class="popup-panel__list">
+                <li class="popup-panel__item">
+                  <div class="popup-panel__adress">ул. Вавилова, д. 242Б
+                  </div>
+                  <div class="popup-panel__worktime">
+                    Пн-Вс 10:00-22:00
+                  </div>
+                </li>
+                <li class="popup-panel__item popup-panel__item--closed">
+                  <div class="popup-panel__adress">ул. Авиагородок, д. 38
+                  </div>
+                  <div class="popup-panel__worktime">
+                    Пн-Вс 10:00-21:00
+                  </div>
+                </li>
+                <li class="popup-panel__item popup-panel__item--closed">
+                  <div class="popup-panel__adress">ул. Богдана Хмельницкого д. 132
+                  </div>
+                  <div class="popup-panel__worktime">
+                    Пн-Вс 10:00-21:00
+                  </div>
+                </li>
+                <li class="popup-panel__item popup-panel__item--closed">
+                  <div class="popup-panel__adress">ул. Бетховена, д. 33/1
+                  </div>
+                  <div class="popup-panel__worktime">
+                    Пн-Вс 10:00-21:00
+                  </div>
+                </li>
+                <li class="popup-panel__item">
+                  <div class="popup-panel__adress">ул. Бородина, д. 8
+                  </div>
+                  <div class="popup-panel__worktime">
+                    Пн-Вс 10:00-22:00
+                  </div>
+                </li>
+                <li class="popup-panel__item popup-panel__item--closed">
+                  <div class="popup-panel__adress">ул. Герцена, д. 232/1
+                  </div>
+                  <div class="popup-panel__worktime">
+                    Пн-Вс 10:00-21:00
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="citymap__map">
+          <div class="citymap__bar">
+            <button class="citymap__back-btn" title="Назад"></button>
+            <div class="geo-position citymap__position">
+              <span class="geo-position__item" title="г. Омск, ул. Авиагородок, 38">г. Омск, ул. Авиагородок, 38</span>
+            </div>
+            <button class="citymap__accept-btn" title="Подтвердить и закрыть"></button>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9156.725883079042!2d73.3262823535232!3d54.987452204509246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1510588988841" width="100%" height="100%"></iframe>
+        </div>
+        <button class="citymap__close-btn" title="Свернуть карту"></button>
+      </div>
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            Контакты
+          </li>
+        </ul>
+      </div>
+      <div class="contacts">
+        <div class="contacts__wrapper">
+          <div class="contacts__inner feedback">
+            <div class="feedback__header">Заполните поля ниже, чтобы отправить нам письмо.</div>
+            <form action="#" class="feedback__form" name="feedback-form">
+              <div class="feedback__inner">
+                <label for="user-name" class="feedback__label">
+                  Привет, меня зовут*
+                </label>
+                <input type="text" id="user-name" class="feedback__input feedback__input--author" placeholder="Имя">
+              </div>
+              <div class="feedback__inner">
+                <label for="user-email" class="feedback__label">
+                  Мой электронный адрес*
+                </label>
+                <input type="email" id="user-email" class="feedback__input feedback__input--email" placeholder="E-mail">
+              </div>
+              <div class="feedback__inner">
+                <label for="user-message" class="feedback__label">
+                  Я хочу связаться с вами по поводу
+                </label>
+                <textarea id="user-message" class="feedback__input feedback__input--message" name="message" rows="6" placeholder="Текст сообщения"></textarea>
+              </div>
+              <button class="feedback__btn">Отправить сообщение</button>
+            </form>
+          </div>
+          <div class="contacts__inner">
+            <div class="contacts__widget-sidebar">
+              <div class="contacts__widget-header">
+                Контакты
+              </div>
+              <div class="contacts__text-widget">
+                <span class="contacts__widget-title">
+                  Центральный офис в Омске:
+                </span>
+                <span class="contacts__widget-info">644034 г. Омск, ул. Вавилова, д. 242 Б</span>
+                <span class="contacts__widget-info contacts__widget-info--tel">8 (3812) 40-79-15</span>
+                <span class="contacts__widget-info contacts__widget-info--email">pivomanomsk@mail.ru</span>
+              </div>
+              <div class="contacts__text-widget">
+                <span class="contacts__widget-title">
+                  Центральный офис в Казани:
+                </span>
+                <span class="contacts__widget-info">420087 г. Казань, ул. Гвардейская, д. 54 Е</span>
+                <span class="contacts__widget-info contacts__widget-info--email">pivomankazan@mail.ru</span>
+              </div>
+              <div class="contacts__text-widget">
+                <span class="contacts__widget-title">
+                  Офис в Нижнем Новгороде:
+                </span>
+                <span class="contacts__widget-info">603034 г. Нижний Новгород, ул. Удмурсткая, д. 38</span>
+                <span class="contacts__widget-info contacts__widget-info--tel">8 (920) 029-95-56</span>
+                <span class="contacts__widget-info contacts__widget-info--tel">8 (831) 283-01-70</span>
+              </div>
+              <div class="contacts__widget-header">
+                Время работы офисов
+              </div>
+              <div class="contacts__text-widget">
+                Наши офисы открыты для посещения каждый день с понедельника по субботу с 9:00 до 18:00
+              </div>
+            </div>
+          </div>
+          <div class="contacts__inner">
+            <div class="shop-list">
+              <div class="contacts__widget-header">
+                Наши магазины
+              </div>
+              <form action="#" class="filter filter--locations">
+                <div class="filter__select-wrapper filter__select-wrapper--locations">
+                  <span class="filter__title">
+                    <b>Выберите регион</b>
+                  </span>
+                  <div class="filter__dropdown">
+                    <ul class="filter__list">
+                      <li class="filter__item">
+                        <label>
+                          <input type="radio" name="region" class="filter__radio" value="Омская область">
+                          <span class="filter__value filter__value--single">Омская область</span>
+                        </label>
+                      </li>
+                      <li class="filter__item">
+                        <label>
+                          <input type="radio" name="region" class="filter__radio" value="Новосибирская область">
+                          <span class="filter__value filter__value--single">Новосибирская область</span>
+                        </label>
+                      </li>
+                      <li class="filter__item">
+                        <label>
+                          <input type="radio" name="region" class="filter__radio" value="Нижегородская область">
+                          <span class="filter__value filter__value--single">Нижегородская область</span>
+                        </label>
+                      </li>
+                      <li class="filter__item">
+                        <label>
+                          <input type="radio" name="region" class="filter__radio" value="Республика Башкортастан">
+                          <span class="filter__value filter__value--single">Республика Башкортастан</span>
+                        </label>
+                      </li>
+                      <li class="filter__item">
+                        <label>
+                          <input type="radio" name="region" class="filter__radio" value="Республика Татарстан">
+                          <span class="filter__value filter__value--single">Республика Татарстан</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="filter__select-wrapper filter__select-wrapper--locations">
+                  <span class="filter__title">
+                    <b>Выберите город</b>
+                  </span>
+                  <div class="filter__dropdown">
+                    <ul class="filter__list">
+                      <li class="filter__item">
+                        <label>
+                          <input type="radio" name="city" class="filter__radio" value="Омск">
+                          <span class="filter__value filter__value--single">Омск</span>
+                        </label>
+                      </li>
+                      <li class="filter__item">
+                        <label>
+                          <input type="radio" name="city" class="filter__radio" value="Азово">
+                          <span class="filter__value filter__value--single">Азово</span>
+                        </label>
+                      </li>
+                      <li class="filter__item">
+                        <label>
+                          <input type="radio" name="city" class="filter__radio" value="Береговой">
+                          <span class="filter__value filter__value--single">Береговой</span>
+                        </label>
+                      </li>
+                      <li class="filter__item">
+                        <label>
+                          <input type="radio" name="city" class="filter__radio" value="Большеречье">
+                          <span class="filter__value filter__value--single">Большеречье</span>
+                        </label>
+                      </li>
+                      <li class="filter__item">
+                        <label>
+                          <input type="radio" name="city" class="filter__radio" value="Горьковское">
+                          <span class="filter__value filter__value--single">Горьковское</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="filter__select-wrapper">
+                  <button class="filter__btn">Найти</button>
+                </div>
+              </form>
+              <div class="shop-list__empty">
+                Чтобы увидеть список магазинов, пожалуйста выберите город.
+              </div>
+              <span class="shop-list__info">Показано 5 из 52 магазинов</span>
+              <table class="shop-list__list">
+                <tr class="shop-list__item shop-list__item--header">
+                  <th>№</th>
+                  <th>Адрес</th>
+                  <th>Часы работы</th>
+                  <th>Ассортимент</th>
+                </tr>
+                <tr class="shop-list__item">
+                  <td>1</td>
+                  <td class="shop-list__adress">ул. Авиагородок, д. 38</td>
+                  <td class="shop-list__worktime">09:00 - 21:00</td>
+                  <td><a href="index.html">Посмотреть ассортимент</a></td>
+                </tr>
+                <tr class="shop-list__item">
+                  <td>2</td>
+                  <td class="shop-list__adress">ул. Богдана Хмельницкого д. 132</td>
+                  <td class="shop-list__worktime">09:00 - 21:00</td>
+                  <td><a href="index.html">Посмотреть ассортимент</a></td>
+                </tr>
+                <tr class="shop-list__item">
+                  <td>3</td>
+                  <td class="shop-list__adress">ул. Бетховена, д. 33/1</td>
+                  <td class="shop-list__worktime">09:00 - 21:00</td>
+                  <td><a href="index.html">Посмотреть ассортимент</a></td>
+                </tr>
+                <tr class="shop-list__item">
+                  <td>4</td>
+                  <td class="shop-list__adress">ул. Бородина, д. 8</td>
+                  <td class="shop-list__worktime">09:00 - 22:00</td>
+                  <td><a href="index.html">Посмотреть ассортимент</a></td>
+                </tr>
+                <tr class="shop-list__item">
+                  <td>5</td>
+                  <td class="shop-list__adress">ул. Герцена, д. 232/1</td>
+                  <td class="shop-list__worktime">09:00 - 21:00</td>
+                  <td><a href="index.html">Посмотреть ассортимент</a></td>
+                </tr>
+              </table>
+              <a href="#" class="btn-show-more">
+                Показать еще
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer">
+        <div class="page-footer__wrapper">
+          <div class="page-footer__column">
+            <h3 class="page-footer__title">
+              О компании
+            </h3>
+            <ul class="page-footer__list">
+              <li class="page-footer__item">
+                <a href="o-nas.html" class="page-footer__link">О нас</a>
+              </li>
+              <li class="page-footer__item">
+                <a href="akcii-i-skidki.html" class="page-footer__link">Акции и скидки</a>
+              </li>
+              <li class="page-footer__item">
+                <a href="kontakty.html" class="page-footer__link">Контакты</a>
+              </li>
+              <li class="page-footer__item">
+                <a href="vakansii.html" class="page-footer__link">Вакансии</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__column">
+            <h3 class="page-footer__title">
+              Информация
+            </h3>
+            <ul class="page-footer__list">
+              <li class="page-footer__item">
+                <a href="korporativnym-klientam.html" class="page-footer__link">Корпоративным клиентам</a>
+              </li>
+              <li class="page-footer__item">
+                <a href="commerce.html" class="page-footer__link">Оптовые продажи</a>
+              </li>
+              <li class="page-footer__item">
+                <a href="privacy.html" class="page-footer__link">Политика конфиденциальности</a>
+              </li>
+              <li class="page-footer__item">
+                <a href="agreement.html" class="page-footer__link">Соглашение</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__column">
+            <h3 class="page-footer__title">
+              Мы в социальных сетях
+            </h3>
+            <div class="social">
+              <a href="https://vk.com/pivomanomsk" class="social__link page-footer__link"><span class="social__ico social__ico--vk" title="Пивоман в Омске"></span>Пивоман в Омске</a>
+              <a href="https://vk.com/pivmankazan" class="social__link page-footer__link"><span class="social__ico social__ico--vk" title="Пивоман в Казани"></span>Пивоман в Казани</a>
+            </div>
+          </div>
+          <div class="copyright">
+            <span class="copyright__item"><i class="copyright__symbol">©</i> ООО «Пивоман-Казань», 2017-2018</span>
+            <span class="copyright__item"><a href="http://mealbakh.com">Mealbakh</a> разработка и продвижение сайтов</span>
+          </div>
+        </div>
+      </div>
+      <div class="top-shadow-layer"></div>
+    </div>
+    <div class="modal-window">
+      <div class="modal-window__wrapper modal-window__wrapper--age18">
+        <h3 class="modal-window__title">
+          Добро пожаловать на сайт сети фирменных магазинов ПивоМан.
+        </h3>
+        <div class="modal-window__text">
+          Вам уже исполнилось 18 лет?
+        </div>
+        <div class="modal-window__inner">
+          <button class="btn modal-window__btn">Да</button>
+          <button class="btn modal-window__btn">Нет</button>
+        </div>
+        <div class="modal-window__info">
+          *Информация по стоимости и количеству товара представлена на сайте для ознакомления (по данным на <span class="modal-window__info-time">9:22 от 03.11.2017</span> ).
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+
+    $('.filter__title').click(function(){
+      $(this).toggleClass('filter__title--active').next().slideToggle(200);
+    })
+
+    </script>
+  </body>
+</html>

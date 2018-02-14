@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Пивоман</title>
+    <meta name="description" content="Пивоман">
+    <meta name="keywords" content="Пивоман">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="preload" href="fonts/OfficinaSansWinC.woff2" as="font">
+    <link rel="preload" href="fonts/OfficinaSansWinCBold.woff2" as="font">
+    <link rel="preload" href="fonts/KellySlab-Regular.woff2" as="font">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <div class="page-container">
+      <header class="page-header">
+        <div class="topnav">
+          <div class="topnav__wrapper">
+            <ul class="topnav__list">
+              <li class="topnav__item">
+                <a href="o-nas.html" class="topnav__link">О нас</a>
+              </li>
+              <li class="topnav__item">
+                <a href="akcii-i-skidki.html" class="topnav__link">Акции и скидки</a>
+              </li>
+              <li class="topnav__item">
+                <a href="korporativnym-klientam.html" class="topnav__link">Корпоративным клиентам</a>
+              </li>
+              <li class="topnav__item">
+                <a href="kontakty.html" class="topnav__link">Контакты</a>
+              </li>
+              <li class="topnav__item">
+                <a href="vakansii.html" class="topnav__link">Вакансии</a>
+              </li>
+            </ul>
+            <div class="geo-position">
+              <a href="#" class="geo-position__item" title="г. Омск, ул. Авиагородок, 38">
+                г. Омск, ул. Авиагородок, 38
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Тут лежит карта, открыть ее можно кликнув по geo-position -->
+
+      <div class="citymap">
+        <div class="citymap__sidebar sidebar">
+          <div class="sidebar__wrapper">
+            <div class="sidebar__header">
+              <div class="sidebar__title">
+                Россия
+              </div>
+              <button class="close-btn sidebar__close-btn" title="Закрыть"></button>
+              <label for="map-search" class="text-input text-input--search sidebar__search" title="Поиск по городам">
+                <input id="map-search" type="text" name="map-search" value="" placeholder="Поиск по городам">
+              </label>
+            </div>
+            <ul class="sidebar__list locations">
+              <li class="locations__region">
+                <a href="#" class="locations__link"><span>Омск</span><div class="locations__count" title="Сейчас открыто">15/47</div></a>
+              </li>
+              <li class="locations__region locations__dropdown">
+                <a href="#" class="locations__group-title">Омская обл.</a>
+                <ul class="locations__group">
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Азово</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Береговой</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Большеречье</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Горьковское</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Исилькуль</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Калачинск</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Азово</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Береговой</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Большеречье</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Горьковское</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Исилькуль</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Калачинск</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="locations__region locations__dropdown">
+                <a href="#" class="locations__group-title">Новосибирская обл.</a>
+                <ul class="locations__group">
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Татарск</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="locations__region">
+                <a href="#" class="locations__link"><span>Казань</span><div class="locations__count" title="Сейчас открыто">44/91</div></a>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar__popup popup-panel">
+            <div class="popup-panel__wrapper">
+              <div class="popup-panel__header">
+                <div class="popup-panel__title">
+                  Омск<div class="locations__count" title="Сейчас открыто">15/37</div>
+                </div>
+                <button class="close-btn" title="Закрыть"></button>
+                <label for="adress-search" class="text-input text-input--search sidebar__search" title="Поиск магазинов на карте">
+                  <input id="adress-search" type="text" name="adress-search" value="" placeholder="Поиск по адресу">
+                </label>
+              </div>
+              <ul class="popup-panel__list">
+                <li class="popup-panel__item">
+                  <div class="popup-panel__adress">ул. Вавилова, д. 242Б
+                  </div>
+                  <div class="popup-panel__worktime">
+                    Пн-Вс 10:00-22:00
+                  </div>
+                </li>
+                <li class="popup-panel__item popup-panel__item--closed">
+                  <div class="popup-panel__adress">ул. Авиагородок, д. 38
+                  </div>
+                  <div class="popup-panel__worktime">
+                    Пн-Вс 10:00-21:00
+                  </div>
+                </li>
+                <li class="popup-panel__item popup-panel__item--closed">
+                  <div class="popup-panel__adress">ул. Богдана Хмельницкого д. 132
+                  </div>
+                  <div class="popup-panel__worktime">
+                    Пн-Вс 10:00-21:00
+                  </div>
+                </li>
+                <li class="popup-panel__item popup-panel__item--closed">
+                  <div class="popup-panel__adress">ул. Бетховена, д. 33/1
+                  </div>
+                  <div class="popup-panel__worktime">
+                    Пн-Вс 10:00-21:00
+                  </div>
+                </li>
+                <li class="popup-panel__item">
+                  <div class="popup-panel__adress">ул. Бородина, д. 8
+                  </div>
+                  <div class="popup-panel__worktime">
+                    Пн-Вс 10:00-22:00
+                  </div>
+                </li>
+                <li class="popup-panel__item popup-panel__item--closed">
+                  <div class="popup-panel__adress">ул. Герцена, д. 232/1
+                  </div>
+                  <div class="popup-panel__worktime">
+                    Пн-Вс 10:00-21:00
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="citymap__map">
+          <div class="citymap__bar">
+            <button class="citymap__back-btn" title="Назад"></button>
+            <div class="geo-position citymap__position">
+              <span class="geo-position__item" title="г. Омск, ул. Авиагородок, 38">г. Омск, ул. Авиагородок, 38</span>
+            </div>
+            <button class="citymap__accept-btn" title="Подтвердить и закрыть"></button>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9156.725883079042!2d73.3262823535232!3d54.987452204509246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1510588988841" width="100%" height="100%"></iframe>
+        </div>
+        <button class="citymap__close-btn" title="Свернуть карту"></button>
+      </div>
+
+
+      <!-- Тут лежат маркеры и всплывашки для карты, позиционирование задано для наглядности-->
+
+      <div class="map-marker" style="left: 200px; top: 400px">
+        <a href="#" class="map-marker__marker map-marker__marker--opened" title="г. Омск, ул.Вавилова, д. 242Б - сейчас открыто"></a>
+        <div class="map-marker__info">
+          <button class="close-btn map-marker__close-btn" title="Закрыть"></button>
+          <div class="map-marker__location">
+            Омск
+          </div>
+          <div class="map-marker__adress">
+            ул.Вавилова, д. 242Б
+          </div>
+          <div class="map-marker__status">
+            Открыто
+          </div>
+          <div class="map-marker__worktime">
+            Пн-Вс 10:00-22:00
+          </div>
+          <a href="tel:+73812407915" class="map-marker__phone">
+            +7 (3812) 40‒79‒15
+          </a>
+          <div class="map-marker__information">
+            единая справочная - пн-сб 9:00-18:00
+          </div>
+        </div>
+      </div>
+
+      <div class="map-marker" style="left: 400px; top: 400px">
+        <a href="#" class="map-marker__marker map-marker__marker--closed" title="г. Омск, ул.Вавилова, д. 242Б - сейчас закрыто"></a>
+        <div class="map-marker__info">
+          <button class="close-btn map-marker__close-btn" title="Закрыть"></button>
+          <div class="map-marker__location">
+            Омск
+          </div>
+          <div class="map-marker__adress">
+            ул.Вавилова, д. 242Б
+          </div>
+          <div class="map-marker__status">
+            Закрыто
+          </div>
+          <div class="map-marker__worktime">
+            Пн-Вс 10:00-21:00
+          </div>
+          <a href="tel:+73812407915" class="map-marker__phone">
+            +7 (3812) 40‒79‒15
+          </a>
+          <div class="map-marker__information">
+            единая справочная - пн-сб 9:00-18:00
+          </div>
+        </div>
+      </div>
+
+      <div class="map-marker map-marker--active" style="left: 600px; top: 400px">
+        <a href="#" class="map-marker__marker map-marker__marker--closed" title="г. Омск, ул.Вавилова, д. 242Б - сейчас закрыто"></a>
+        <div class="map-marker__info">
+          <button class="close-btn map-marker__close-btn" title="Закрыть"></button>
+          <div class="map-marker__location">
+            Омск
+          </div>
+          <div class="map-marker__adress">
+            ул.Вавилова, д. 242Б
+          </div>
+          <div class="map-marker__status">
+            Закрыто
+          </div>
+          <div class="map-marker__worktime">
+            Пн-Вс 10:00-21:00
+          </div>
+          <a href="tel:+73812407915" class="map-marker__phone">
+            +7 (3812) 40‒79‒15
+          </a>
+          <div class="map-marker__information">
+            единая справочная - пн-сб 9:00-18:00
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <script>
+
+    //Открывает и закрывает информацию о маркерах
+
+    $('.map-marker__marker').click(function(){
+      $('.map-marker').removeClass('map-marker--active');
+      $(this).parent().addClass('map-marker--active');
+    })
+
+    $('.map-marker__close-btn').click(function(){
+      $(this).closest('.map-marker').removeClass('map-marker--active');
+    })
+
+    </script>
+
+  </body>
+</html>
