@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Пивоман</title>
+    <meta name="description" content="Пивоман">
+    <meta name="keywords" content="Пивоман">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <!-- <link rel="preload" href="fonts/OfficinaSansWinC.woff2" as="font">
+    <link rel="preload" href="fonts/OfficinaSansWinCBold.woff2" as="font">
+    <link rel="preload" href="fonts/KellySlab-Regular.woff2" as="font"> -->
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <div class="page-container">
+      <header class="page-header">
+        <div class="topnav">
+          <div class="topnav__wrapper">
+            <ul class="topnav__list">
+              <li class="topnav__item">
+                <a href="index.html" class="topnav__link">О нас</a>
+              </li>
+              <li class="topnav__item">
+                <a href="akcii-i-skidki.html" class="topnav__link">Акции и скидки</a>
+              </li>
+              <li class="topnav__item">
+                <a href="korporativnym-klientam.html" class="topnav__link">Корпоративным клиентам</a>
+              </li>
+              <li class="topnav__item">
+                <a href="kontakty.html" class="topnav__link">Контакты</a>
+              </li>
+            </ul>
+            <div class="geo-position">
+              <a href="#" class="geo-position__item" title="г. Омск, ул. Авиагородок, 38">
+                г. Омск, ул. Авиагородок, 38
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="navbar">
+        <div class="navbar__wrapper">
+          <a href="index.html" class="logo navbar__logo" title="Сеть фирменных магазинов - Пивоман">
+            <img src="img/logo.svg" alt="Пивоман - сеть магазинов разливного пива"  class="logo__img" width="140px" height="34px">
+          </a>
+          <div class="navbar__inner">
+            <ul class="navbar__list">
+              <li class="navbar__item">
+                <a href="catalog.html" class="navbar__link"><img src="img/beer-mug.svg" alt="Пиво" class="navbar__link-ico" width="26" height="29">Пиво</a>
+              </li>
+              <li class="navbar__item">
+                <a href="catalog.html" class="navbar__link"><img src="img/corkscrew.svg" alt="Аксессуары" class="navbar__link-ico" width="21" height="29">Аксессуары</a>
+              </li>
+              <li class="navbar__item">
+                <a href="catalog.html" class="navbar__link"><img src="img/nachos.svg" alt="Закуски" class="navbar__link-ico" width="32" height="24">Закуски</a>
+              </li>
+              <!-- <li class="navbar__item">
+                <a href="catalog.html" class="navbar__link"><img src="img/bottle.svg" alt="Наборы" class="navbar__link-ico" width="20" height="29">Наборы</a>
+              </li> -->
+              <li class="navbar__item">
+                <a href="catalog.html" class="navbar__link"><img src="img/soda.svg" alt="Напитки" class="navbar__link-ico" width="16" height="29">Напитки</a>
+              </li>
+            </ul>
+            <a href="#" name="search" class="navbar__search" title="Поиск по катологу">Ищу хорошее пиво</a>
+            <!-- <label for="site-search" class="text-input text-input--search navbar__search" title="Поиск по катологу">
+              <input id="site-search" type="text" name="search" value="" placeholder="Ищу хорошее пиво">
+            </label> -->
+          </div>
+          <button class="trigger-ctrl"><span class="trigger-ctrl__inner"></span></button>
+        </div>
+      </div>
+      <div class="site-search">
+        <div class="site-search__wrapper">
+          <a href="#" class="close-btn close-btn--search" title="Закрыть"></a>
+          <form class="site-search__form" action="index.html" method="post">
+            <input class="site-search__search" id="siteSearch" type="search" name="site-search" value="" placeholder="Введите запрос для поиска">
+          </form>
+          <ul class="site-search__result-list">
+            <li class="site-search__result-item">
+              <a href="#" class="site-search__link" title="Бочкари - Weiss Berg 4.3% - Пиво светлое нефильтрованное">
+                <img src="img/products/weiss-berg.png" alt="search-preview" class="site-search__preview">
+                <div class="site-search__info">
+                  <div class="site-search__name">Бочкари - Weiss Berg 4.3% - Пиво светлое нефильтрованное</div>
+                  <div class="site-search__desc">Для данного товара описание появится позже.</div>
+                </div>
+              </a>
+            </li>
+            <li class="site-search__result-item">
+              <a href="#" class="site-search__link" title="Бочкари - Weiss Berg 4.3% - Пиво светлое нефильтрованное">
+                <img src="img/products/weiss-berg.png" alt="search-preview" class="site-search__preview">
+                <div class="site-search__info">
+                  <div class="site-search__name">Бочкари - Weiss Berg 4.3% - Пиво светлое нефильтрованное</div>
+                  <div class="site-search__desc">Для данного товара описание появится позже.</div>
+                </div>
+              </a>
+            </li>
+            <li class="site-search__result-item">
+              <a href="#" class="site-search__link" title="Бочкари - Weiss Berg 4.3% - Пиво светлое нефильтрованное">
+                <img src="img/products/weiss-berg.png" alt="search-preview" class="site-search__preview">
+                <div class="site-search__info">
+                  <div class="site-search__name">Бочкари - Weiss Berg 4.3% - Пиво светлое нефильтрованное</div>
+                  <div class="site-search__desc">Для данного товара описание появится позже.</div>
+                </div>
+              </a>
+            </li>
+            <li class="site-search__result-item">
+              <a href="#" class="site-search__link" title="Бочкари - Weiss Berg 4.3% - Пиво светлое нефильтрованное">
+                <img src="img/products/weiss-berg.png" alt="search-preview" class="site-search__preview">
+                <div class="site-search__info">
+                  <div class="site-search__name">Бочкари - Weiss Berg 4.3% - Пиво светлое нефильтрованное</div>
+                  <div class="site-search__desc">Для данного товара описание появится позже.</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="citymap">
+        <div class="citymap__sidebar sidebar">
+          <div class="sidebar__wrapper">
+            <div class="sidebar__header">
+              <div class="sidebar__title">
+                Россия
+              </div>
+              <button class="close-btn sidebar__close-btn" title="Закрыть"></button>
+              <label for="map-search" class="text-input text-input--search sidebar__search" title="Поиск по городам">
+                <input id="map-search" type="text" name="map-search" value="" placeholder="Поиск по городам">
+              </label>
+            </div>
+            <ul class="sidebar__list locations">
+              <li class="locations__region">
+                <a href="#" class="locations__link"><span>Омск</span><div class="locations__count" title="Сейчас открыто">15/47</div></a>
+              </li>
+              <li class="locations__region locations__dropdown">
+                <a href="#" class="locations__group-title">Омская обл.</a>
+                <ul class="locations__group">
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Азово</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Береговой</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Большеречье</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Горьковское</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Исилькуль</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Калачинск</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Азово</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Береговой</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Большеречье</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Горьковское</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Исилькуль</span></a>
+                  </li>
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Калачинск</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="locations__region locations__dropdown">
+                <a href="#" class="locations__group-title">Новосибирская обл.</a>
+                <ul class="locations__group">
+                  <li class="locations__item">
+                    <a href="#" class="locations__link"><span>Татарск</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="locations__region">
+                <a href="#" class="locations__link"><span>Казань</span><div class="locations__count" title="Сейчас открыто">44/91</div></a>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar__popup popup-panel">
+            <div class="popup-panel__wrapper">
+              <div class="popup-panel__header">
+                <div class="popup-panel__title">
+                  Омск<div class="locations__count" title="Сейчас открыто">15/37</div>
+                </div>
+                <button class="close-btn" title="Закрыть"></button>
+                <label for="adress-search" class="text-input text-input--search sidebar__search" title="Поиск магазинов на карте">
+                  <input id="adress-search" type="text" name="adress-search" value="" placeholder="Поиск по адресу">
+                </label>
+              </div>
+              <ul class="popup-panel__list">
+                <li class="popup-panel__item">
+                  <div class="popup-panel__adress">ул. Вавилова, д. 242Б
+                  </div>
+                  <div class="popup-panel__worktime">
+                    Пн-Вс 10:00-22:00
+                  </div>
+                </li>
+                <li class="popup-panel__item popup-panel__item--closed">
+                  <div class="popup-panel__adress">ул. Авиагородок, д. 38
+                  </div>
+                  <div class="popup-panel__worktime">
+                    Пн-Вс 10:00-21:00
+                  </div>
+                </li>
+                <li class="popup-panel__item popup-panel__item--closed">
+                  <div class="popup-panel__adress">ул. Богдана Хмельницкого д. 132
+                  </div>
+                  <div class="popup-panel__worktime">
+                    Пн-Вс 10:00-21:00
+                  </div>
+                </li>
+                <li class="popup-panel__item popup-panel__item--closed">
+                  <div class="popup-panel__adress">ул. Бетховена, д. 33/1
+                  </div>
+                  <div class="popup-panel__worktime">
+                    Пн-Вс 10:00-21:00
+                  </div>
+                </li>
+                <li class="popup-panel__item">
+                  <div class="popup-panel__adress">ул. Бородина, д. 8
+                  </div>
+                  <div class="popup-panel__worktime">
+                    Пн-Вс 10:00-22:00
+                  </div>
+                </li>
+                <li class="popup-panel__item popup-panel__item--closed">
+                  <div class="popup-panel__adress">ул. Герцена, д. 232/1
+                  </div>
+                  <div class="popup-panel__worktime">
+                    Пн-Вс 10:00-21:00
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="citymap__map">
+          <div class="citymap__bar">
+            <button class="citymap__back-btn" title="Назад"></button>
+            <div class="geo-position citymap__position">
+              <span class="geo-position__item" title="г. Омск, ул. Авиагородок, 38">г. Омск, ул. Авиагородок, 38</span>
+            </div>
+            <button class="citymap__accept-btn" title="Подтвердить и закрыть"></button>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9156.725883079042!2d73.3262823535232!3d54.987452204509246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1510588988841" width="100%" height="100%"></iframe>
+        </div>
+        <button class="citymap__close-btn" title="Свернуть карту"></button>
+      </div>
+      <div class="catalog">
+        <div class="catalog__wrapper">
+          <h1 class="catalog__title">
+            Каталог пива
+          </h1>
+          <form action="#" class="filter">
+            <div class="filter__select-wrapper">
+              <span class="filter__title">
+                <b>Пивоварня</b>
+              </span>
+              <div class="filter__dropdown">
+                <ul class="filter__list">
+                  <li class="filter__item">
+                    <label>
+                      <input type="checkbox" class="filter__checkbox" value="Альпина">
+                      <span class="filter__value">Альпина</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label>
+                      <input type="checkbox" class="filter__checkbox" value="Бочкари">
+                      <span class="filter__value">Бочкари</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label>
+                      <input type="checkbox" class="filter__checkbox" value="Марксовский ПЗ">
+                      <span class="filter__value">Марксовский ПЗ</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label>
+                      <input type="checkbox" class="filter__checkbox" value="Свежевъ">
+                      <span class="filter__value">Свежевъ</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label>
+                      <input type="checkbox" class="filter__checkbox" value="ФПК">
+                      <span class="filter__value">ФПК</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- <div class="filter__select-wrapper">
+              <span class="filter__title">
+                <b>Стиль</b>
+              </span>
+              <div class="filter__dropdown">
+                <ul class="filter__list">
+                  <li class="filter__item">
+                    <label>
+                      <input type="checkbox" class="filter__checkbox" value="Лагер">
+                      <span class="filter__value">Лагер</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label>
+                      <input type="checkbox" class="filter__checkbox" value="Пильзнер">
+                      <span class="filter__value">Пильзнер</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label>
+                      <input type="checkbox" class="filter__checkbox" value="Эль">
+                      <span class="filter__value">Эль</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label>
+                      <input type="checkbox" class="filter__checkbox" value="Стаут">
+                      <span class="filter__value">Стаут</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label>
+                      <input type="checkbox" class="filter__checkbox" value="ИПЭ">
+                      <span class="filter__value">ИПЭ</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div> -->
+            <!-- <div class="filter__select-wrapper">
+              <span class="filter__title">
+                <b>Страна</b>
+              </span>
+              <div class="filter__dropdown">
+                <ul class="filter__list">
+                  <li class="filter__item">
+                    <label>
+                      <input type="checkbox" class="filter__checkbox" value="Англия">
+                      <span class="filter__value">Англия</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label>
+                      <input type="checkbox" class="filter__checkbox" value="Бельгия">
+                      <span class="filter__value">Бельгия</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label>
+                      <input type="checkbox" class="filter__checkbox" value="Германия">
+                      <span class="filter__value">Германия</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label>
+                      <input type="checkbox" class="filter__checkbox" value="Мексика">
+                      <span class="filter__value">Мексика</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label>
+                      <input type="checkbox" class="filter__checkbox" value="Россия">
+                      <span class="filter__value">Россия</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label>
+                      <input type="checkbox" class="filter__checkbox" value="США">
+                      <span class="filter__value">США</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label>
+                      <input type="checkbox" class="filter__checkbox" value="Чехия">
+                      <span class="filter__value">Чехия</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label>
+                      <input type="checkbox" class="filter__checkbox" value="Швеция">
+                      <span class="filter__value">Швеция</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div> -->
+            <div class="filter__select-wrapper">
+              <span class="filter__title">
+                <b>Тип</b>
+              </span>
+              <div class="filter__dropdown">
+                <ul class="filter__list">
+                  <li class="filter__item">
+                    <label>
+                      <input type="checkbox" class="filter__checkbox" value="Светлое">
+                      <span class="filter__value">Светлое</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label>
+                      <input type="checkbox" class="filter__checkbox" value="Темное">
+                      <span class="filter__value">Темное</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label>
+                      <input type="checkbox" class="filter__checkbox" value="Нефильтрованное">
+                      <span class="filter__value">Нефильтрованное</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label>
+                      <input type="checkbox" class="filter__checkbox" value="Сидр">
+                      <span class="filter__value">Сидр</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label>
+                      <input type="checkbox" class="filter__checkbox" value="Розливное">
+                      <span class="filter__value">Розливное</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label>
+                      <input type="checkbox" class="filter__checkbox" value="Бутылочное">
+                      <span class="filter__value">Бутылочное</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="filter__select-wrapper">
+              <span class="filter__title">
+                <b>Акции</b>
+              </span>
+              <div class="filter__dropdown">
+                <ul class="filter__list">
+                  <li class="filter__item">
+                    <label>
+                      <input type="checkbox" class="filter__checkbox" value="Акция 2+1">
+                      <span class="filter__value">Акция 2+1</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label>
+                      <input type="checkbox" class="filter__checkbox" value="Новинка">
+                      <span class="filter__value">Новинка</span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label>
+                      <input type="checkbox" class="filter__checkbox" value="Хит">
+                      <span class="filter__value">Хит</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="filter__select-wrapper filter__select-wrapper--btn">
+              <button class="filter__btn">Применить</button>
+            </div>
+          </form>
+          <div class="catalog__empty">Товаров в данной категории не найдено :(</div>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <a href="product.html" class="catalog__product-link">
+                <img src="img/products/andreich-svetloe.png" alt="Бочкари - Weiss Berg 4.3% - Пиво светлое фильтрованное" class="catalog__img">
+                <ul class="catalog__offers-list">
+                  <li class="catalog__offer">
+                    <span>НОВИНКА</span>
+                  </li>
+                  <li class="catalog__offer">
+                    <span>ХИТ</span>
+                  </li>
+                  <li class="catalog__offer">
+                    <span>2+1</span>
+                  </li>
+                </ul>
+                <div class="catalog__item-info">
+                  4.3%
+                </div>
+                <div class="catalog__item-btn">
+                  Подробнее
+                </div>
+              </a>
+              <div class="catalog__detail">
+                <a href="product.html" class="catalog__name">Бочкари - Андреич 4.3% - Пиво светлое</a>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a href="product.html" class="catalog__product-link">
+                <img src="img/products/weiss-berg.png" alt="Бочкари - Weiss Berg 4.3% - Пиво светлое фильтрованное" class="catalog__img">
+                <ul class="catalog__offers-list">
+                  <li class="catalog__offer">
+                    <span>НОВИНКА</span>
+                  </li>
+                  <li class="catalog__offer">
+                    <span>ХИТ</span>
+                  </li>
+                  <li class="catalog__offer">
+                    <span>2+1</span>
+                  </li>
+                </ul>
+                <div class="catalog__item-info">
+                  4.3%
+                </div>
+                <div class="catalog__item-btn">
+                  Подробнее
+                </div>
+              </a>
+              <div class="catalog__detail">
+                <a href="product.html" class="catalog__name">Бочкари - Weiss Berg 4.3% - Пиво светлое нефильтрованное</a>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a href="product.html" class="catalog__product-link">
+                <img src="img/products/Altajskij-kolos.png" alt="Бочкари - Weiss Berg 4.3% - Пиво светлое фильтрованное" class="catalog__img">
+                <ul class="catalog__offers-list">
+                  <li class="catalog__offer">
+                    <span>НОВИНКА</span>
+                  </li>
+                  <li class="catalog__offer">
+                    <span>ХИТ</span>
+                  </li>
+                  <li class="catalog__offer">
+                    <span>2+1</span>
+                  </li>
+                </ul>
+                <div class="catalog__item-info">
+                  4.3%
+                </div>
+                <div class="catalog__item-btn">
+                  Подробнее
+                </div>
+              </a>
+              <div class="catalog__detail">
+                <a href="product.html" class="catalog__name">Бочкари - Алтайский колос 4.3% - Пиво светлое</a>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a href="product.html" class="catalog__product-link">
+                <img src="img/products/angliyskiy-ale.png" alt="Бочкари - Weiss Berg 4.3% - Пиво светлое фильтрованное" class="catalog__img">
+                <ul class="catalog__offers-list">
+                  <li class="catalog__offer">
+                    <span>НОВИНКА</span>
+                  </li>
+                  <li class="catalog__offer">
+                    <span>ХИТ</span>
+                  </li>
+                  <li class="catalog__offer">
+                    <span>2+1</span>
+                  </li>
+                </ul>
+                <div class="catalog__item-info">
+                  4.3%
+                </div>
+                <div class="catalog__item-btn">
+                  Подробнее
+                </div>
+              </a>
+              <div class="catalog__detail">
+                <a href="product.html" class="catalog__name">Английский эль 4.3% - Пиво светлое</a>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a href="product.html" class="catalog__product-link">
+                <img src="img/products/avstriyskiy-recept.png" alt="Бочкари - Weiss Berg 4.3% - Пиво светлое фильтрованное" class="catalog__img">
+                <ul class="catalog__offers-list">
+                  <li class="catalog__offer">
+                    <span>НОВИНКА</span>
+                  </li>
+                  <li class="catalog__offer">
+                    <span>ХИТ</span>
+                  </li>
+                  <li class="catalog__offer">
+                    <span>2+1</span>
+                  </li>
+                </ul>
+                <div class="catalog__item-info">
+                  4.3%
+                </div>
+                <div class="catalog__item-btn">
+                  Подробнее
+                </div>
+              </a>
+              <div class="catalog__detail">
+                <a href="product.html" class="catalog__name">Австрийский рецепт белое 4.3% - Пиво светлое нефильтрованное</a>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a href="product.html" class="catalog__product-link">
+                <img src="img/products/chelninskoe-barhatnoe-premium.png" alt="Бочкари - Weiss Berg 4.3% - Пиво светлое фильтрованное" class="catalog__img">
+                <ul class="catalog__offers-list">
+                  <li class="catalog__offer">
+                    <span>НОВИНКА</span>
+                  </li>
+                  <li class="catalog__offer">
+                    <span>ХИТ</span>
+                  </li>
+                  <li class="catalog__offer">
+                    <span>2+1</span>
+                  </li>
+                </ul>
+                <div class="catalog__item-info">
+                  4.3%
+                </div>
+                <div class="catalog__item-btn">
+                  Подробнее
+                </div>
+              </a>
+              <div class="catalog__detail">
+                <a href="product.html" class="catalog__name">Челнинское бархатное 4.3% - Пиво темное</a>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a href="product.html" class="catalog__product-link">
+                <img src="img/products/cheshskoe-zhivoe.png" alt="Бочкари - Weiss Berg 4.3% - Пиво светлое фильтрованное" class="catalog__img">
+                <ul class="catalog__offers-list">
+                  <li class="catalog__offer">
+                    <span>НОВИНКА</span>
+                  </li>
+                  <li class="catalog__offer">
+                    <span>ХИТ</span>
+                  </li>
+                  <li class="catalog__offer">
+                    <span>2+1</span>
+                  </li>
+                </ul>
+                <div class="catalog__item-info">
+                  4.3%
+                </div>
+                <div class="catalog__item-btn">
+                  Подробнее
+                </div>
+              </a>
+              <div class="catalog__detail">
+                <a href="product.html" class="catalog__name">Чешское живое 4.3% - Пиво светлое нефильтрованное</a>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a href="product.html" class="catalog__product-link">
+                <img src="img/products/nemeckiy-recept.png" alt="Бочкари - Weiss Berg 4.3% - Пиво светлое фильтрованное" class="catalog__img">
+                <ul class="catalog__offers-list">
+                  <li class="catalog__offer">
+                    <span>НОВИНКА</span>
+                  </li>
+                  <li class="catalog__offer">
+                    <span>ХИТ</span>
+                  </li>
+                  <li class="catalog__offer">
+                    <span>2+1</span>
+                  </li>
+                </ul>
+                <div class="catalog__item-info">
+                  4.3%
+                </div>
+                <div class="catalog__item-btn">
+                  Подробнее
+                </div>
+              </a>
+              <div class="catalog__detail">
+                <a href="product.html" class="catalog__name">Немецкий рецепт 4.3% - Пиво светлое нефильтрованное</a>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a href="product.html" class="catalog__product-link">
+                <img src="img/products/cheshskoe-svetloe.png" alt="Бочкари - Weiss Berg 4.3% - Пиво светлое фильтрованное" class="catalog__img">
+                <ul class="catalog__offers-list">
+                  <li class="catalog__offer">
+                    <span>НОВИНКА</span>
+                  </li>
+                  <li class="catalog__offer">
+                    <span>ХИТ</span>
+                  </li>
+                  <li class="catalog__offer">
+                    <span>2+1</span>
+                  </li>
+                </ul>
+                <div class="catalog__item-info">
+                  4.3%
+                </div>
+                <div class="catalog__item-btn">
+                  Подробнее
+                </div>
+              </a>
+              <div class="catalog__detail">
+                <a href="product.html" class="catalog__name">Бочкари - Чешское оригинальное 4.3% - Пиво светлое</a>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a href="product.html" class="catalog__product-link">
+                <img src="img/products/cheshskiy-recept-zhivoe.png" alt="Бочкари - Weiss Berg 4.3% - Пиво светлое фильтрованное" class="catalog__img">
+                <ul class="catalog__offers-list">
+                  <li class="catalog__offer">
+                    <span>НОВИНКА</span>
+                  </li>
+                  <li class="catalog__offer">
+                    <span>ХИТ</span>
+                  </li>
+                  <li class="catalog__offer">
+                    <span>2+1</span>
+                  </li>
+                </ul>
+                <div class="catalog__item-info">
+                  4.3%
+                </div>
+                <div class="catalog__item-btn">
+                  Подробнее
+                </div>
+              </a>
+              <div class="catalog__detail">
+                <a href="product.html" class="catalog__name">Чешксий рецепт живое 4.3% - Пиво светлое нефильтрованное</a>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a href="product.html" class="catalog__product-link">
+                <img src="img/products/rozlivnoe-svetloe.png" alt="Бочкари - Weiss Berg 4.3% - Пиво светлое фильтрованное" class="catalog__img">
+                <ul class="catalog__offers-list">
+                  <li class="catalog__offer">
+                    <span>НОВИНКА</span>
+                  </li>
+                  <li class="catalog__offer">
+                    <span>ХИТ</span>
+                  </li>
+                  <li class="catalog__offer">
+                    <span>2+1</span>
+                  </li>
+                </ul>
+                <div class="catalog__item-info">
+                  4.3%
+                </div>
+                <div class="catalog__item-btn">
+                  Подробнее
+                </div>
+              </a>
+              <div class="catalog__detail">
+                <a href="product.html" class="catalog__name">Бламберг светлое 4.3% - Пиво светлое</a>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a href="product.html" class="catalog__product-link">
+                <img src="img/products/rozlivnoe-temnoe.png" alt="Бочкари - Weiss Berg 4.3% - Пиво светлое фильтрованное" class="catalog__img">
+                <ul class="catalog__offers-list">
+                  <li class="catalog__offer">
+                    <span>НОВИНКА</span>
+                  </li>
+                  <li class="catalog__offer">
+                    <span>ХИТ</span>
+                  </li>
+                  <li class="catalog__offer">
+                    <span>2+1</span>
+                  </li>
+                </ul>
+                <div class="catalog__item-info">
+                  4.3%
+                </div>
+                <div class="catalog__item-btn">
+                  Подробнее
+                </div>
+              </a>
+              <div class="catalog__detail">
+                <a href="product.html" class="catalog__name">Пивоман - Бархатное 4.3% - Пиво темное</a>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a href="product.html" class="catalog__product-link">
+                <img src="img/products/rozlivnoe-nefiltrovannoe.png" alt="Бочкари - Weiss Berg 4.3% - Пиво светлое фильтрованное" class="catalog__img">
+                <ul class="catalog__offers-list">
+                  <li class="catalog__offer">
+                    <span>НОВИНКА</span>
+                  </li>
+                  <li class="catalog__offer">
+                    <span>ХИТ</span>
+                  </li>
+                  <li class="catalog__offer">
+                    <span>2+1</span>
+                  </li>
+                </ul>
+                <div class="catalog__item-info">
+                  4.3%
+                </div>
+                <div class="catalog__item-btn">
+                  Подробнее
+                </div>
+              </a>
+              <div class="catalog__detail">
+                <a href="product.html" class="catalog__name">Косоухофф 4.3% - Пиво светлое нефильтрованное</a>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a href="product.html" class="catalog__product-link">
+                <img src="img/products/comingsoon.jpg" alt="Бочкари - Weiss Berg 4.3% - Пиво светлое фильтрованное" class="catalog__img">
+                <ul class="catalog__offers-list">
+                  <li class="catalog__offer">
+                    <span>НОВИНКА</span>
+                  </li>
+                  <li class="catalog__offer">
+                    <span>ХИТ</span>
+                  </li>
+                  <li class="catalog__offer">
+                    <span>2+1</span>
+                  </li>
+                </ul>
+                <div class="catalog__item-info">
+                  4.5%
+                </div>
+                <div class="catalog__item-btn">
+                  Подробнее
+                </div>
+              </a>
+              <div class="catalog__detail">
+                <a href="product.html" class="catalog__name">Пивоман - Сидр Яблочный 4.5%</a>
+              </div>
+            </li>
+          </ul>
+          <a href="#" class="btn-show-more">Показать еще</a>
+        </div>
+      </div>
+      <div class="page-footer">
+        <div class="page-footer__wrapper">
+          <div class="page-footer__column">
+            <h3 class="page-footer__title">
+              О компании
+            </h3>
+            <ul class="page-footer__list">
+              <li class="page-footer__item">
+                <a href="o-nas.html" class="page-footer__link">О нас</a>
+              </li>
+              <li class="page-footer__item">
+                <a href="akcii-i-skidki.html" class="page-footer__link">Акции и скидки</a>
+              </li>
+              <li class="page-footer__item">
+                <a href="kontakty.html" class="page-footer__link">Контакты</a>
+              </li>
+              <li class="page-footer__item">
+                <a href="vakansii.html" class="page-footer__link">Вакансии</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__column">
+            <h3 class="page-footer__title">
+              Информация
+            </h3>
+            <ul class="page-footer__list">
+              <li class="page-footer__item">
+                <a href="korporativnym-klientam.html" class="page-footer__link">Корпоративным клиентам</a>
+              </li>
+              <li class="page-footer__item">
+                <a href="commerce.html" class="page-footer__link">Оптовые продажи</a>
+              </li>
+              <li class="page-footer__item">
+                <a href="privacy.html" class="page-footer__link">Политика конфиденциальности</a>
+              </li>
+              <li class="page-footer__item">
+                <a href="agreement.html" class="page-footer__link">Соглашение</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__column">
+            <h3 class="page-footer__title">
+              Мы в социальных сетях
+            </h3>
+            <div class="social">
+              <a href="https://vk.com/pivomanomsk" class="social__link page-footer__link"><span class="social__ico social__ico--vk" title="Пивоман в Омске"></span>Пивоман в Омске</a>
+              <a href="https://vk.com/pivmankazan" class="social__link page-footer__link"><span class="social__ico social__ico--vk" title="Пивоман в Казани"></span>Пивоман в Казани</a>
+            </div>
+          </div>
+          <div class="copyright">
+            <span class="copyright__item"><i class="copyright__symbol">©</i> ООО «Пивоман-Казань», 2017-2018</span>
+            <span class="copyright__item"><a href="http://mealbakh.com">Mealbakh</a> разработка и продвижение сайтов</span>
+          </div>
+        </div>
+      </div>
+      <div class="top-shadow-layer"></div>
+    </div>
+    <div class="modal-window">
+      <div class="modal-window__wrapper modal-window__wrapper--age18">
+        <h3 class="modal-window__title">
+          Добро пожаловать на сайт сети фирменных магазинов ПивоМан.
+        </h3>
+        <div class="modal-window__text">
+          Вам уже исполнилось 18 лет?
+        </div>
+        <div class="modal-window__inner">
+          <button class="btn modal-window__btn">Да</button>
+          <button class="btn modal-window__btn">Нет</button>
+        </div>
+        <div class="modal-window__info">
+          *Информация по стоимости и количеству товара представлена на сайте для ознакомления (по данным на <span class="modal-window__info-time">9:22 от 03.11.2017</span> ).
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+
+    $('.filter__title').click(function(){
+      $(this).toggleClass('filter__title--active').next().slideToggle(200);
+    })
+
+    </script>
+  </body>
+</html>

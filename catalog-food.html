@@ -53,7 +53,7 @@
                 <a href="catalog.html" class="navbar__link"><img src="img/corkscrew.svg" alt="Аксессуары" class="navbar__link-ico" width="21" height="29">Аксессуары</a>
               </li>
               <li class="navbar__item">
-                <a href="catalog.html" class="navbar__link"><img src="img/nachos.svg" alt="Закуски" class="navbar__link-ico" width="32" height="24">Закуски</a>
+                <a href="catalog-food.html" class="navbar__link"><img src="img/nachos.svg" alt="Закуски" class="navbar__link-ico" width="32" height="24">Закуски</a>
               </li>
               <!-- <li class="navbar__item">
                 <a href="catalog.html" class="navbar__link"><img src="img/bottle.svg" alt="Наборы" class="navbar__link-ico" width="20" height="29">Наборы</a>
@@ -209,210 +209,70 @@
         </div>
         <button class="citymap__close-btn" title="Свернуть карту"></button>
       </div>
-      <div class="breadcrumbs">
-        <ul class="breadcrumbs__list">
-          <li class="breadcrumbs__item">
-            Контакты
-          </li>
-        </ul>
-      </div>
-      <div class="contacts">
-        <div class="contacts__wrapper">
-          <div class="contacts__inner feedback">
-            <div class="feedback__header">Заполните поля ниже, чтобы отправить нам письмо.</div>
-            <form action="#" class="feedback__form" name="feedback-form">
-              <div class="feedback__inner">
-                <label for="user-name" class="feedback__label">
-                  Привет, меня зовут*
-                </label>
-                <input type="text" id="user-name" class="feedback__input feedback__input--author" placeholder="Имя">
-              </div>
-              <div class="feedback__inner">
-                <label for="user-email" class="feedback__label">
-                  Мой электронный адрес*
-                </label>
-                <input type="email" id="user-email" class="feedback__input feedback__input--email" placeholder="E-mail">
-              </div>
-              <div class="feedback__inner">
-                <label for="user-message" class="feedback__label">
-                  Я хочу связаться с вами по поводу
-                </label>
-                <textarea id="user-message" class="feedback__input feedback__input--message" name="message" rows="6" placeholder="Текст сообщения"></textarea>
-              </div>
-              <button class="feedback__btn">Отправить сообщение</button>
-            </form>
-          </div>
-          <div class="contacts__inner">
-            <div class="contacts__widget-sidebar">
-              <div class="contacts__widget-header">
-                Контакты
-              </div>
-              <div class="contacts__text-widget">
-                <span class="contacts__widget-title">
-                  Центральный офис в Омске:
-                </span>
-                <span class="contacts__widget-info">644034 г. Омск, ул. Вавилова, д. 242 Б</span>
-                <span class="contacts__widget-info contacts__widget-info--tel">8 (3812) 40-79-15</span>
-                <span class="contacts__widget-info contacts__widget-info--email">pivomanomsk@mail.ru</span>
-              </div>
-              <div class="contacts__text-widget">
-                <span class="contacts__widget-title">
-                  Центральный офис в Казани:
-                </span>
-                <span class="contacts__widget-info">420087 г. Казань, ул. Гвардейская, д. 54 Е</span>
-                <span class="contacts__widget-info contacts__widget-info--email">pivomankazan@mail.ru</span>
-              </div>
-              <div class="contacts__text-widget">
-                <span class="contacts__widget-title">
-                  Офис в Нижнем Новгороде:
-                </span>
-                <span class="contacts__widget-info">603034 г. Нижний Новгород, ул. Удмурсткая, д. 38</span>
-                <span class="contacts__widget-info contacts__widget-info--tel">8 (920) 029-95-56</span>
-                <span class="contacts__widget-info contacts__widget-info--tel">8 (831) 283-01-70</span>
-              </div>
-              <div class="contacts__widget-header">
-                Время работы офисов
-              </div>
-              <div class="contacts__text-widget">
-                Наши офисы открыты для посещения каждый день с понедельника по субботу с 9:00 до 18:00
-              </div>
-            </div>
-          </div>
-          <div class="contacts__inner">
-            <div class="shop-list">
-              <div class="contacts__widget-header">
-                Наши магазины
-              </div>
-              <form action="#" class="filter filter--locations">
-                <div class="filter__select-wrapper filter__select-wrapper--locations">
-                  <span class="filter__title">
-                    <b>Выберите регион</b>
-                  </span>
-                  <div class="filter__dropdown">
-                    <ul class="filter__list">
-                      <li class="filter__item">
-                        <label>
-                          <input type="radio" name="region" class="filter__radio" value="Омская область">
-                          <span class="filter__value filter__value--single">Омская область</span>
-                        </label>
-                      </li>
-                      <li class="filter__item">
-                        <label>
-                          <input type="radio" name="region" class="filter__radio" value="Новосибирская область">
-                          <span class="filter__value filter__value--single">Новосибирская область</span>
-                        </label>
-                      </li>
-                      <li class="filter__item">
-                        <label>
-                          <input type="radio" name="region" class="filter__radio" value="Нижегородская область">
-                          <span class="filter__value filter__value--single">Нижегородская область</span>
-                        </label>
-                      </li>
-                      <li class="filter__item">
-                        <label>
-                          <input type="radio" name="region" class="filter__radio" value="Республика Башкортастан">
-                          <span class="filter__value filter__value--single">Республика Башкортастан</span>
-                        </label>
-                      </li>
-                      <li class="filter__item">
-                        <label>
-                          <input type="radio" name="region" class="filter__radio" value="Республика Татарстан">
-                          <span class="filter__value filter__value--single">Республика Татарстан</span>
-                        </label>
-                      </li>
-                    </ul>
-                  </div>
+      <div class="food">
+        <div class="food__wrapper">
+          <h1 class="food__title">Каталог закусок</h1>
+          <ul class="food__list">
+            <li class="food__item">
+              <img src="img/products/fish.jpg" alt="Рыбные закуски" class="food__img">
+              <div class="food__item-wrapper">
+                <h2 class="food__name">
+                  Рыбные закуски
+                </h2>
+                <div class="food__desc">
+                  Закуски из рыбы всегда выглядят изысканно и торжественно. Каждая хозяйка знает, что приготовление блюд из рыбы – работа кропотливая и непростая, поэтому присутствие на праздничном столе рыбных блюд всегда высоко ценится. Видя на столе красивое праздничное блюдо из рыбы, всегда приходит мысль о том, что хозяйка очень рада гостям и не пожалела собственного времени на приготовление более сложного блюда, по сравнению с обычным салатом или простой закуской.
+                  Как известно, праздничные столы не обходятся без закусок, а вот их разновидностей просто не перечислить. Праздничные закуски из рыбы – это нечто особенное. Вкус и аромат рыбы отлично сочетается с различными продуктами, поэтому многообразие рецептов блюд и закусок из рыбы просто поражает.
                 </div>
-                <div class="filter__select-wrapper filter__select-wrapper--locations">
-                  <span class="filter__title">
-                    <b>Выберите город</b>
-                  </span>
-                  <div class="filter__dropdown">
-                    <ul class="filter__list">
-                      <li class="filter__item">
-                        <label>
-                          <input type="radio" name="city" class="filter__radio" value="Омск">
-                          <span class="filter__value filter__value--single">Омск</span>
-                        </label>
-                      </li>
-                      <li class="filter__item">
-                        <label>
-                          <input type="radio" name="city" class="filter__radio" value="Азово">
-                          <span class="filter__value filter__value--single">Азово</span>
-                        </label>
-                      </li>
-                      <li class="filter__item">
-                        <label>
-                          <input type="radio" name="city" class="filter__radio" value="Береговой">
-                          <span class="filter__value filter__value--single">Береговой</span>
-                        </label>
-                      </li>
-                      <li class="filter__item">
-                        <label>
-                          <input type="radio" name="city" class="filter__radio" value="Большеречье">
-                          <span class="filter__value filter__value--single">Большеречье</span>
-                        </label>
-                      </li>
-                      <li class="filter__item">
-                        <label>
-                          <input type="radio" name="city" class="filter__radio" value="Горьковское">
-                          <span class="filter__value filter__value--single">Горьковское</span>
-                        </label>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="filter__select-wrapper filter__select-wrapper--btn">
-                  <button class="filter__btn">Найти</button>
-                </div>
-              </form>
-              <div class="shop-list__empty">
-                Чтобы увидеть список магазинов, пожалуйста выберите город.
               </div>
-              <span class="shop-list__info">Показано 5 из 52 магазинов</span>
-              <table class="shop-list__list">
-                <tr class="shop-list__item shop-list__item--header">
-                  <th>№</th>
-                  <th>Адрес</th>
-                  <th>Часы работы</th>
-                  <th>Ассортимент</th>
-                </tr>
-                <tr class="shop-list__item">
-                  <td>1</td>
-                  <td class="shop-list__adress">ул. Авиагородок, д. 38</td>
-                  <td class="shop-list__worktime">09:00 - 21:00</td>
-                  <td><a href="index.html">Посмотреть ассортимент</a></td>
-                </tr>
-                <tr class="shop-list__item">
-                  <td>2</td>
-                  <td class="shop-list__adress">ул. Богдана Хмельницкого д. 132</td>
-                  <td class="shop-list__worktime">09:00 - 21:00</td>
-                  <td><a href="index.html">Посмотреть ассортимент</a></td>
-                </tr>
-                <tr class="shop-list__item">
-                  <td>3</td>
-                  <td class="shop-list__adress">ул. Бетховена, д. 33/1</td>
-                  <td class="shop-list__worktime">09:00 - 21:00</td>
-                  <td><a href="index.html">Посмотреть ассортимент</a></td>
-                </tr>
-                <tr class="shop-list__item">
-                  <td>4</td>
-                  <td class="shop-list__adress">ул. Бородина, д. 8</td>
-                  <td class="shop-list__worktime">09:00 - 22:00</td>
-                  <td><a href="index.html">Посмотреть ассортимент</a></td>
-                </tr>
-                <tr class="shop-list__item">
-                  <td>5</td>
-                  <td class="shop-list__adress">ул. Герцена, д. 232/1</td>
-                  <td class="shop-list__worktime">09:00 - 21:00</td>
-                  <td><a href="index.html">Посмотреть ассортимент</a></td>
-                </tr>
-              </table>
-              <a href="#" class="btn-show-more">
-                Показать еще
-              </a>
-            </div>
-          </div>
+            </li>
+            <li class="food__item">
+              <img src="img/products/meat.jpg" alt="Мясные закуски" class="food__img">
+              <div class="food__item-wrapper">
+                <h2 class="food__name">
+                  Мясные закуски
+                </h2>
+                <div class="food__desc">
+                  Закуски из мяса всегда были и останутся обязательным блюдом на праздничном столе. Они могут быть горячими или холодными, сложными или простыми, но ни один праздничный стол без мясных закусок еще не обошелся. Мясные закуски превосходно сочетаются с любыми алкогольными напитками. И вообще, застолье может продолжаться долго, пока на праздничном столе присутствуют такие блюда. Закуски из мяса – это всегда сытно, вкусно, роскошно и торжественно. Какой бы ни был повод для торжества, на столе обязательно должны присутствовать праздничные мясные закуски.
+                </div>
+              </div>
+            </li>
+            <li class="food__item">
+              <img src="img/products/cheese.jpg" alt="Сырные закуски" class="food__img">
+              <div class="food__item-wrapper">
+                <h2 class="food__name">
+                  Сырные закуски
+                </h2>
+                <div class="food__desc">
+                  Сыр изготавливается людьми с незапамятных времен: по одной из версий его начали готовить еще в 8 тысячелетии до нашей эры. Изобретение сыра было связано с одомашниванием овец и предположительно произошло случайно: при хранении молока в желудках жвачных животных оно превращалось в творог и сыворотку, а причиной такого превращения был сычужный фермент, который содержится в желудках таких животных.
+                  Если предположительное время изобретения сыра указывается историками, то касательно места ничего наверняка не известно. За первенство в изобретении сыра соперничают Ближний Восток, Сахара, Центральная Азия и Европа.
+                </div>
+              </div>
+            </li>
+            <li class="food__item">
+              <img src="img/products/snacks.jpg" alt="Снеки" class="food__img">
+              <div class="food__item-wrapper">
+                <h2 class="food__name">
+                  Снеки
+                </h2>
+                <div class="food__desc">
+                  Снэки — это продукты для быстрого и легкого утоления голода, закуски, употребление которых происходит между делом, на ходу. Современному человеку постоянно не хватает времени на ведение домашнего хозяйства, приготовление пищи и т.д. Изменения в культуре потребления различных товаров, постепенный переход от российских традиционных застолий к более легким формам отдыха способствуют созданию у потребителей новых предпочтений — использования готовых к употреблению закусок.
+                  Согласно международной классификации снэковыми являются картофельные и кукурузные чипсы, сырные и мясные снэки, соломка, печенье, мюсли, хрустящие хлопья, орешки, сухофрукты, шоколадные батончики и др. К снэкам также относятся и традиционные русские продукты — семечки и сухарики.
+                </div>
+              </div>
+            </li>
+            <li class="food__item">
+              <img src="img/products/bakaleya2.jpg" alt="Бакалея" class="food__img">
+              <div class="food__item-wrapper">
+                <h2 class="food__name">
+                  Бакалея
+                </h2>
+                <div class="food__desc">
+                  Сладости (сласти, сладкие блюда) - кондитерские изделия или высококалорийные пищевые продукты с большим содержанием сахара, отличающиеся приятным вкусом и ароматом. Сладости обожают и взрослые, и дети. Сладости легко усваиваются, их можно довольно долго хранить, они содержат большое количество углеводов, дающих энергию – поэтому некоторые виды сладостей используют для питания спортсменов или в условиях туристических походов.
+                  Подают сладости, как правило, на десерт – вместе с чаем или кофе. На торжественных встречах, свадьбах отдельные виды сладостей сервируются заблаговременно – они являются украшением стола. Однако не стоит забывать, что чрезмерное употребление сладостей может привести к ожирению, сахарному диабету и другим заболеваниям.
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="page-footer">
@@ -491,12 +351,5 @@
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
-    <script>
-
-    $('.filter__title').click(function(){
-      $(this).toggleClass('filter__title--active').next().slideToggle(200);
-    })
-
-    </script>
   </body>
 </html>
