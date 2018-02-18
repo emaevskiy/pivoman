@@ -1,0 +1,143 @@
+@import "../vars"
+
+.page-content
+
+.page-content__wrapper
+  width: 100%
+  display: flex
+  align-items: stretch
+  max-width: 1250px
+  padding: 0 25px
+  margin: 0 auto
+
+.page-content__left
+  position: relative
+  width: 25%
+  min-width: 250px
+  padding: 0 30px 40px 0
+  // &::before
+  //   content: ''
+  //   position: absolute
+  //   top: 0
+  //   bottom: 0
+  //   right: 0
+  //   width: 15px
+  //   background: linear-gradient(to left, rgba(#ddd, .5) 0%, rgba(0, 0, 0, 0) 100%)
+  //   z-index: -1
+  // &::after
+  //   content: ''
+  //   position: absolute
+  //   top: 0
+  //   bottom: 0
+  //   right: 0
+  //   width: 100vw
+  //   background: #eee
+  //   z-index: -2
+
+.page-content__right
+  position: relative
+  width: 75%
+  padding: 0 0 40px 30px
+  // &::before
+  //   content: ''
+  //   position: absolute
+  //   top: 0
+  //   bottom: 0
+  //   left: 0
+  //   width: 15px
+  //   background: linear-gradient(to right, rgba(#ddd, .5) 0%, rgba(0, 0, 0, 0) 100%)
+  //   z-index: -1
+  // &::after
+  //   content: ''
+  //   position: absolute
+  //   top: 0
+  //   bottom: 0
+  //   left: 0
+  //   width: 100vw
+  //   background: #eee
+  //   z-index: -2
+
+.page-content__aside
+  font-size: 16px
+
+.page-content__aside-name
+  margin-top: 40px
+  margin-bottom: 10px
+  font-size: 20px
+  font-weight: 600
+
+.text-container
+  color: #1c1c1a
+  h1
+    font-size: 30px
+    font-weight: 600
+    margin: 40px 0 .444em
+    padding-bottom: .25em
+    border-bottom: 1px solid #aaaaaa
+    line-height: 1.165em
+  h2
+    font-size: 20px
+    font-weight: 600
+    margin: 1.167em 0 .533em
+    padding-bottom: .333em
+    border-bottom: 1px solid #aaaaaa
+    line-height: 1.2em
+  p
+    font-size: 18px
+    margin: 1.2em 0
+    line-height: 1.5
+  b
+    font-weight: 600
+  i
+    font-style: italic
+  ul
+    font-size: 18px
+  li
+    position: relative
+    padding-left: 1.475em
+    margin: .625em 0
+    &::before
+      position: absolute
+      content: '\2014'
+      top: 0
+      left: 0
+
+
+.text-container__text-right
+  text-align: right
+
+
+@media only screen and (max-width : 1200px)
+
+  .page-content__wrapper
+    max-width: 992px
+
+
+@media only screen and (max-width : 992px)
+
+  .page-content__wrapper
+    max-width: 768px
+
+
+@media only screen and (max-width : 768px)
+
+  .page-content__wrapper
+    flex-direction: column
+
+  .page-content__left
+    width: 100%
+    padding: 0 0 40px 0
+    order: 2
+
+  .page-content__right
+    width: 100%
+    padding: 0 0 40px 0
+    order: 1
+
+  .text-container
+    h1
+      font-size: 24px
+    h2
+      font-size: 18px
+    p
+      font-size: 16px

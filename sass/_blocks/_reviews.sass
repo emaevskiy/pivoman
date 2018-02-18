@@ -1,0 +1,157 @@
+@import "../vars"
+
+.reviews
+  display: flex
+  width: 100%
+  max-width: 1200px
+  margin: 0 auto
+  background: #f7f7f7
+  padding: 40px 10px
+  margin-bottom: 50px
+
+.reviews__wrapper
+  width: 60%
+  padding: 0 20px
+
+.reviews__title
+  display: block
+  font-size: 28px
+  margin-bottom: 30px
+
+.reviews__empty
+  font-size: 18px
+  margin-bottom: 30px
+
+.reviews__item
+  display: flex
+  margin-bottom: 30px
+  &:not(:first-of-type)
+    border-top: 1px solid #cccccc
+    padding-top: 30px
+
+.reviews__detail
+  min-width: 160px
+  margin-bottom: 20px
+
+.reviews__author
+  font-size: 18px
+  margin-bottom: 5px
+
+.reviews__time
+  font-size: 14px
+  font-weight: 600
+  padding-left: 25px
+  line-height: 14px
+  background: url('../img/clock-2.svg') center left no-repeat
+  background-size: 20px
+
+.reviews__text
+  font-size: 16px
+  margin-left: 20px
+
+.reviews__form-wrapper
+  position: relative
+  width: 40%
+  padding: 0 20px
+
+.reviews__form-rating
+  display: flex
+  font-size: 20px
+  align-items: center
+  flex-wrap: wrap
+  margin-bottom: 20px
+  & > span
+    margin-right: 10px
+
+.reviews__input
+  width: 100%
+  font-size: 18px
+  padding: 10px 18px 10px 40px
+  color: #1a1a1a
+  border: 1px solid #cccccc
+  background: none
+  box-shadow: inset 0 0 5px 0px rgba(0, 0, 0, .1)
+  margin-bottom: 20px
+  &::placeholder
+    color: #111111
+  &--comment
+    background: url('../img/text-lines.svg') no-repeat
+    background-position: 12px 14px
+    background-size: 16px
+    resize: vertical
+    min-height: 100px
+    max-height: 500px
+  &--author
+    background: url('../img/user.svg') no-repeat
+    background-position: 12px center
+    background-size: 16px
+  &--email
+    background: url('../img/mail.svg') no-repeat
+    background-position: 12px center
+    background-size: 16px
+
+.reviews__btn
+  margin-left: auto
+
+.reviews__paginate
+  display: flex
+  margin-bottom: 20px
+
+.reviews__page
+  display: inline-block
+  font-size: 20px
+  & > a
+    padding: 10px 6px
+    &:hover, &:focus
+      color: $color-2
+      text-decoration: none
+  &--active
+    & > a
+      color: $color-2
+
+
+
+@media only screen and (max-width : 1200px)
+
+  .reviews
+    max-width: 942px
+
+@media only screen and (max-width : 992px)
+
+  .reviews
+    max-width: 718px
+
+  .reviews__form-rating
+    margin-bottom: 20px
+
+  .reviews__input
+    margin-bottom: 10px
+
+
+@media only screen and (max-width : 768px)
+
+  .reviews
+    flex-direction: column
+
+  .reviews__wrapper
+    width: 100%
+
+  .reviews__form-wrapper
+    width: 100%
+
+  .reviews__title
+    font-size: 24px
+
+@media only screen and (max-width : 450px)
+
+  .reviews__item
+    display: block
+
+  .reviews__detail
+    width: 100%
+
+  .reviews__text
+    margin: 0
+
+  .reviews__btn
+    width: 100%

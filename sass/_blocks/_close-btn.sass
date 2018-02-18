@@ -1,0 +1,36 @@
+@import "../vars"
+
+.close-btn
+  position: absolute
+  top: 20px
+  right: 20px
+  width: 17px
+  height: 17px
+  border: none
+  background: url('../img/close.svg') center no-repeat
+  background-size: contain
+  &:hover, &:focus
+    opacity: .6
+  &:active
+    opacity: .4
+  &--search
+    top: 0
+    right: 25px
+    bottom: 0
+    margin: auto
+    width: 20px
+    height: 20px
+    background: url('../img/close-2.svg') center no-repeat
+    background-size: contain
+
+
+@media only screen and (max-width : 992px)
+
+  .close-btn
+    &--search
+      right: 20px
+
+  @media only screen and (max-width : 768px)
+
+    .close-btn
+      right: 16px

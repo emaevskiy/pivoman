@@ -1,0 +1,68 @@
+@import "../vars"
+
+.page-footer
+  background: $color-3
+  padding-top: 40px
+  box-shadow: 0 -2px 2px 2px #131312
+  margin-top: auto
+
+.page-footer__wrapper
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  align-items: stretch
+  width: 100%
+  max-width: 1250px
+  padding: 0 10px
+  margin: 0 auto
+  color: #ffffff
+
+.page-footer__column
+  padding: 0 15px
+  // width: calc(100% / 3)
+  min-width: calc(100% / 4)
+  margin-bottom: 30px
+
+.page-footer__title
+  font-size: 20px
+  font-weight: 600
+  margin-bottom: 10px
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
+
+.page-footer__link
+  display: inline-block
+  font-size: 16px
+  // font-weight: 600
+  color: #cccccc
+  padding: 3px 0
+  transition: .3s
+  &:hover, &:focus
+    color: #999999
+    text-decoration: none
+    transition: .3s
+
+
+@media only screen and (max-width : 1200px)
+
+  .page-footer__wrapper
+    max-width: 992px
+
+
+@media only screen and (max-width : 992px)
+
+  .page-footer__wrapper
+    max-width: 768px
+
+  .page-footer__title
+    font-size: 22px
+
+  .page-footer__link
+    font-size: 18px
+
+
+@media only screen and (max-width : 768px)
+
+  .page-footer__column
+    width: 100%

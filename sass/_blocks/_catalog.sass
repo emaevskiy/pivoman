@@ -1,0 +1,225 @@
+@import "../vars"
+
+.catalog
+  padding: 50px 0
+
+.catalog__wrapper
+  padding: 0 25px
+  max-width: 1250px
+  margin: 0 auto
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.catalog__title
+  font-size: 48px
+  font-weight: 600
+  margin-bottom: 40px
+
+.catalog__empty
+  display: none
+  width: calc(100% - 20px)
+  font-size: 18px
+  font-weight: 600
+  padding: 15px
+  border: 1px solid orange
+  background: rgba(orange, .1)
+
+.catalog__list
+  display: flex
+  width: 100%
+  flex-wrap: wrap
+  justify-content: flex-start
+  align-items: flex-start
+
+.catalog__item
+  position: relative
+  width: calc(20% - 24px)
+  border-radius: 5px
+  // box-shadow: 0 2px 6px 1px rgba(0, 0, 0, .2)
+  margin: 0 12px 40px 12px
+  &:hover
+    & > .catalog__product-link
+      box-shadow: 0 10px 20px rgba(0,0,0,.1)
+      transition: .3s
+    & .catalog__item-btn
+      opacity: 1
+      transition: .3s
+
+.catalog__product-link
+  display: block
+  position: relative
+  margin-bottom: 10px
+  border-radius: 4px
+  overflow: hidden
+  // box-shadow: 0 2px 6px 1px rgba(0, 0, 0, .2)
+  // border: 1px solid orange
+  transition: .3s
+
+.catalog__img
+  display: block
+  width: 100%
+  height: auto
+  min-height: 280px
+  max-height: 290px
+  margin: 0 auto
+  object-fit: cover
+  background: radial-gradient(#ffffff 30%, #cecece 100%)
+  // background: #fff
+
+
+.catalog__offers-list
+  position: absolute
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: flex-start
+  top: 0
+  right: 0
+  left: 0
+  padding: 10px
+
+.catalog__offer
+  position: relative
+  display: inline
+  width: 50%
+  margin-bottom: 10px
+  overflow: hidden
+  text-align: center
+  color: #ffffff
+  font-size: 14px
+  // font-weight: 600
+  &:nth-of-type(n)
+    text-align: left
+  &:nth-of-type(2n)
+    text-align: right
+  & > span
+    background: #fa726e
+    border-radius: 3px
+    padding: 0 5px
+    box-shadow: 0 0px 4px 1px rgba(0, 0, 0, .2)
+
+.catalog__item-info
+  position: absolute
+  font-size: 14px
+  color: #ffffff
+  background: #99a
+  padding: 0px 5px
+  border-radius: 3px
+  bottom: 10px
+  right: 10px
+  box-shadow: 0 0px 4px 1px rgba(0, 0, 0, .2)
+
+.item-alco::after
+  content: '%'
+
+.catalog__item-btn
+  display: block
+  position: absolute
+  bottom: 0
+  right: 0
+  left: 0
+  height: 50px
+  font-size: 16px
+  font-weight: 600
+  background: rgba($color-2, .9)
+  opacity: 0
+  text-align: center
+  text-transform: uppercase
+  color: rgba(255, 255, 255, .7)
+  line-height: 50px
+  transition: .3s
+  &:hover
+    color: #ffffff
+
+.catalog__detail
+  font-size: 16px
+  padding: 10px 5px 0 5px
+  text-align: center
+  line-height: 1.2
+  font-weight: 600
+
+.catalog__name
+  margin-bottom: 5px
+  color: #1a1a1a
+  transition: .2s
+  &:hover, &:focus
+    color: #1a1a1a
+    opacity: .7
+    text-decoration: none
+    transition: .2s
+  &:active
+    opacity: .4
+
+
+@media only screen and (max-width : 1200px)
+
+  .catalog__wrapper
+    max-width: 992px
+    padding: 0 15px
+
+  .catalog__img
+    min-height: 229px
+
+
+@media only screen and (max-width : 992px)
+
+  .catalog__wrapper
+    max-width: 768px
+    padding: 0 15px
+
+  .catalog__item
+    width: calc(100% / 4 - 24px)
+
+  .catalog__img
+    min-height: 217px
+
+
+@media only screen and (max-width : 768px)
+
+  .catalog__title
+    font-size: 30px
+    font-weight: 600
+    margin-bottom: 40px
+
+  .catalog__item
+    width: calc(100% / 3 - 24px)
+
+  .catalog__img
+    min-height: 204px
+
+  .catalog__item-info
+    bottom: 60px
+    right: 10px
+
+  .catalog__detail
+    font-size: 15px
+
+  .catalog__item-btn
+    opacity: 1
+
+@media only screen and (max-width : 550px)
+
+  .catalog__item
+    width: calc(100% / 2 - 24px)
+
+  .catalog__img
+    min-height: 166px
+    max-height: 320px
+
+  .catalog__offers-list
+    padding: 2vw
+
+  .catalog__offer
+    width: 100%
+    margin-bottom: 5px
+    &:nth-of-type(2n)
+      text-align: left
+
+  .catalog__item-info
+    bottom: calc(50px + 2vw)
+    right: 2vw
+
+  .catalog__detail
+    font-size: 15px
+    padding: 0

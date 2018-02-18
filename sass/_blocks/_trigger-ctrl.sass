@@ -1,0 +1,61 @@
+@import "../vars"
+
+.trigger-ctrl
+  display: none
+  width: 34px
+  height: 34px
+  align-items: center
+  justify-content: center
+  background: none
+  border: 0
+  padding: 0
+  padding: 4px
+  transition: .3s
+  &:hover, &:focus
+    opacity: .7
+    transition: .3s
+  &:active
+    opacity: .5
+
+.trigger-ctrl__inner
+  position: relative
+  display: block
+  width: 100%
+  height: 2px
+  background: #ffffff
+  transition: background 0s .2s
+  &::before
+    position: absolute
+    content: ''
+    display: block
+    width: 100%
+    height: 2px
+    background: #ffffff
+    top: -10px
+    transition: top .3s .3s, transform .3s
+  &::after
+    position: absolute
+    content: ''
+    display: block
+    width: 100%
+    height: 2px
+    background: #ffffff
+    bottom: -10px
+    transition: bottom .3s .3s, transform .3s
+  &--active
+    background: rgba($color-3, 0)
+    transition: background .2s .1s
+    &::before
+      top: 0px
+      transform: rotateZ(-45deg)
+      transition: top .3s, transform .3s .3s
+    &::after
+      bottom: 0px
+      transform: rotateZ(45deg)
+      transition: bottom .3s, transform .3s .3s
+
+
+@media only screen and (max-width : 992px)
+
+  .trigger-ctrl
+    display: flex

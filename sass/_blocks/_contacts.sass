@@ -1,0 +1,178 @@
+@import "../vars"
+
+.contacts
+  padding: 50px 0
+
+.contacts__wrapper
+  padding: 0 25px
+  max-width: 1250px
+  margin: 0 auto
+  display: flex
+  flex-wrap: wrap
+  align-items: stretch
+
+.contacts__inner
+  width: calc(100% + 40px)
+  padding: 20px 20px 60px 20px
+  margin: 0 -20px
+  &:nth-of-type(1)
+    width: calc(60% + 20px)
+    margin: 0
+    margin-left: -20px
+  &:nth-of-type(2)
+    width: calc(40% + 20px)
+    margin: 0
+    margin-right: -20px
+
+.contacts__widget-sidebar
+  padding-left: 20px
+
+.contacts__widget-header
+  font-size: 24px
+  font-weight: 600
+  margin-bottom: 25px
+
+.contacts__text-widget
+  font-size: 18px
+  margin-bottom: 25px
+
+.contacts__widget-title
+  display: block
+  font-weight: 600
+  margin-bottom: 20px
+
+.contacts__widget-info
+  display: block
+  &--tel
+    padding-left: 30px
+    background: url('../img/phone 2.svg') left center no-repeat
+    background-position: left center
+    background-size: 20px
+  &--email
+    padding-left: 30px
+    background: url('../img/mail.svg') left center no-repeat
+    background-position: 2px center
+    background-size: 16px
+
+
+.shop-list
+  background: #f7f7f7
+  padding: 40px 30px
+
+.shop-list__empty
+  // display: none
+  width: calc(100% - 20px)
+  font-size: 18px
+  font-weight: 600
+  padding: 15px
+  border: 1px solid orange
+  background: rgba(orange, .1)
+
+.shop-list__info
+  display: inline-block
+  font-size: 18px
+  font-weight: 600
+  margin-bottom: 30px
+
+.shop-list__list
+  width: 100%
+  margin-bottom: 40px
+
+
+.shop-list__item
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  font-size: 18px
+  border-bottom: 1px solid #cccccc
+  padding: 10px 0
+  &--header
+    font-weight: 600
+  & > td, & > th
+    text-align: left
+    flex-shrink: 1
+    padding: 0 20px
+    &:nth-of-type(1)
+      width: 15%
+    &:nth-of-type(2)
+      width: 35%
+    &:nth-of-type(3)
+      width: 20%
+    &:nth-of-type(4)
+      width: 30%
+
+
+@media only screen and (max-width : 1200px)
+
+  .contacts__wrapper
+    max-width: 992px
+
+
+@media only screen and (max-width : 992px)
+
+  .contacts__wrapper
+    max-width: 768px
+
+  .shop-list__item
+    & > td, & > th
+      &:nth-of-type(1)
+        display: none
+      &:nth-of-type(2)
+        width: 40%
+      &:nth-of-type(3)
+        width: 25%
+      &:nth-of-type(4)
+        width: 35%
+
+
+@media only screen and (max-width : 768px)
+
+  .contacts__wrapper
+    display: block
+
+  .contacts__inner
+    width: 100%
+    padding: 20px 0
+    margin: 0
+    &:nth-of-type(1)
+      width: 100%
+      margin: 0
+    &:nth-of-type(2)
+      width: 100%
+      margin: 0
+
+  .contacts__widget-sidebar
+    padding-left: 0
+
+  .shop-list
+    padding: 40px 10px
+
+  .shop-list__item
+    & > td, & > th
+      &:nth-of-type(2)
+        width: 70%
+      &:nth-of-type(3)
+        width: 30%
+      &:nth-of-type(4)
+        display: none
+
+@media only screen and (max-width : 550px)
+
+  .shop-list__item
+    font-size: 16px
+    flex-wrap: wrap
+    &--header
+      display: none
+    & > td, & > th
+      padding: 0 10px
+      &:nth-of-type(2)
+        width: 100%
+      &:nth-of-type(3)
+        width: 100%
+
+  td.shop-list__worktime
+    display: block
+    padding-left: 37px
+    background: url('../img/clock-2.svg') 7px center no-repeat
+    background-size: 20px

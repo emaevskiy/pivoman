@@ -1,0 +1,100 @@
+@import "../vars"
+
+.sidebar
+  position: relative
+  display: flex
+  flex-direction: column
+  width: 300px
+  min-width: 260px
+  height: 100%
+  background: #1c1c1a
+  box-shadow: inset 0 0 5px 2px #131312, 2px 0px 6px 1px rgba(0, 0, 0, .3)
+  line-height: 2
+
+.sidebar__wrapper
+  overflow-y: auto
+
+.sidebar__header
+  position: relative
+  display: flex
+  flex-direction: column
+  min-height: 95px
+  padding: 15px 20px 0 25px
+
+.sidebar__close-btn
+  display: none
+
+.sidebar__title
+  display: block
+  font-size: $font-size-s
+  // font-weight: 600
+  color: $color-1
+
+.sidebar__search
+  margin: 10px 0 20px 0
+
+.sidebar__popup
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 62px
+  &::before
+    position: absolute
+    content: ''
+    display: block
+    top: 0
+    bottom: 0
+    left: -92px
+    width: 94px
+    background: rgba(28, 28, 26, .8)
+
+
+@media only screen and (max-width : 992px)
+
+  .sidebar__search
+    width: 100%
+
+
+@media only screen and (max-width : 768px)
+
+  // .sidebar
+    // width: 100%
+
+  .sidebar
+    position: absolute
+    width: auto
+    height: auto
+    min-width: 280px
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 1
+
+  .sidebar__header
+    padding: 15px 15px 0 15px
+    min-height: 65px
+
+  .sidebar__close-btn
+    display: block
+
+  // .sidebar__title
+  //   display: none
+
+  .sidebar__search
+    width: 100%
+    max-width: none
+    & > input
+      max-width: none
+
+  .sidebar__popup
+    left: 0
+    &::before
+      position: absolute
+      content: ''
+      display: block
+      top: 0
+      bottom: 0
+      left: -92px
+      width: 94px
+      background: rgba(28, 28, 26, .8)

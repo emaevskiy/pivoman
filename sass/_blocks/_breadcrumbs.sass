@@ -1,0 +1,61 @@
+@import "../vars"
+
+.breadcrumbs
+  width: 100%
+  background: rgba(#778860, .1)
+
+.breadcrumbs__list
+  width: 100%
+  max-width: 1250px
+  display: flex
+  flex-wrap: wrap
+  padding: 18px 25px 20px 25px
+  margin: 0 auto
+
+.breadcrumbs__item
+  position: relative
+  font-size: 20px
+  font-weight: 600
+  padding: 0 40px 0 0px
+  margin-right: 10px
+  line-height: 1
+  &::after
+    position: absolute
+    content: ''
+    display: block
+    width: 20px
+    height: 14px
+    top: 0
+    bottom: 0
+    right: 0
+    margin: auto
+    border-top: 7px solid transparent
+    border-left: 12px solid $color-3
+    border-bottom: 7px solid transparent
+  &:last-of-type
+    padding: 0
+    margin-right: 0
+    &::after
+      display: none
+
+@media only screen and (max-width : 1200px)
+
+  .breadcrumbs__list
+    max-width: 992px
+
+@media only screen and (max-width : 992px)
+
+  .breadcrumbs__list
+    max-width: 768px
+
+@media only screen and (max-width : 768px)
+
+  .breadcrumbs__item
+    font-size: 16px
+    padding-right: 30px
+    &::after
+      width: 12px
+      height: 10px
+      border-top: 5px solid transparent
+      border-left: 8px solid $color-3
+      border-bottom: 5px solid transparent

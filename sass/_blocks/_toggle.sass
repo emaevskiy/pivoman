@@ -1,0 +1,59 @@
+@import "../vars"
+
+.toggle
+  display: inline-flex
+  align-items: center
+  cursor: pointer
+
+.toggle__wrapper
+  position: relative
+  display: inline-block
+  width: 50px
+  height: 30px
+  border-radius: 15px
+  background: #ffdddd
+  box-shadow: inset 0px 1px 6px 0px rgba(0, 0, 0, .8)
+  transition: .3s
+  &::before
+    content: ''
+    display: block
+    position: absolute
+    background: url('../img/cancel.svg') center no-repeat #ffffff
+    background-size: 10px 10px
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, .8)
+    top: 2px
+    left: 2px
+    height: 26px
+    width: 26px
+    border-radius: 50%
+    transition: .3s
+
+.toggle__item
+  display: none
+  &:checked + .toggle__wrapper
+    background: #66ff66
+    transition: .3s
+    &::before
+      background: url('../img/checked.svg') center no-repeat #ffffff
+      background-size: 12px 12px
+      top: 2px
+      left: calc(50px - 28px)
+      transition: .3s
+
+.toggle__value
+  margin-left: 25px
+  font-size: 20px
+  font-weight: 700
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+
+  .toggle__wrapper
+    width: 50px
+    height: 30px
+    &::before
+      height: 26px
+      width: 26px
+
+  .toggle__value
+    font-size: 18px

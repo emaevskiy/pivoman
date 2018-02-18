@@ -1,0 +1,130 @@
+@import "../vars"
+
+.map-marker
+  position: absolute
+  &--active
+    & > .map-marker__marker
+      display: none
+    & > .map-marker__info
+      display: block
+
+.map-marker__marker
+  display: block
+  position: absolute
+  left: -10px
+  bottom: 0
+  width: 22px
+  height: 28px
+  background: url('../img/map-marker.svg') center no-repeat
+  background-size: contain
+  z-index: 2
+  &::after
+    position: absolute
+    content: ''
+    display: block
+    width: 10px
+    height: 10px
+    border-radius: 10px
+    top: 6px
+    left: 0
+    right: 0
+    margin: auto
+    background: $color-1
+  &--opened
+    &::after
+      background: #417505
+  &--closed
+    &::after
+      background: #ae0725
+
+.map-marker__info
+  display: none
+  position: absolute
+  min-width: 310px
+  color: $color-1
+  background: $color-3
+  padding: 20px 25px
+  box-shadow: 2px 2px 4px 0 #1c1c1a, inset 0 1px 3px 0 rgba(0, 0, 0, 0.5)
+  border-radius: 3px
+  bottom: 40px
+  left: -30px
+  transition: .3s
+  &::before
+    content: ''
+    position: absolute
+    display: block
+    width: 35px
+    height: 40px
+    bottom: -40px
+    left: 30px
+    border-left: 35px solid $color-3
+    border-bottom: 42px solid transparent
+  &::after
+    content: ''
+    position: absolute
+    display: block
+    width: 37px
+    height: 41px
+    bottom: -42px
+    left: 31px
+    border-left: 35px solid $color-3
+    border-bottom: 42px solid transparent
+    filter: blur(3px)
+    z-index: -1
+
+.map-marker__location
+  font-size: 18px
+  font-weight: 600
+
+.map-marker__adress
+  font-size: 18px
+  font-weight: 600
+  margin-bottom: 10px
+
+.map-marker__status
+  font-size: 18px
+  margin-bottom: 5px
+
+.map-marker__worktime
+  position: relative
+  font-size: 16px
+  margin-bottom: 5px
+  padding-left: 35px
+  &::before
+    position: absolute
+    content: ''
+    display: block
+    width: 20px
+    height: 20px
+    top: 0
+    bottom: 0
+    left: 0
+    margin: auto
+    background: url('../img/clock.svg') center no-repeat
+    background-size: contain
+
+.map-marker__phone
+  position: relative
+  font-size: 16px
+  padding-left: 35px
+  color: $color-1
+  &::before
+    position: absolute
+    content: ''
+    display: block
+    width: 20px
+    height: 20px
+    top: 0
+    bottom: 0
+    left: 0
+    margin: auto
+    background: url('../img/phone.svg') center no-repeat
+    background-size: contain
+  &:hover, &:focus
+    color: $color-1
+  &:active
+    opacity: .5
+
+.map-marker__information
+  font-size: 14px
+  padding-left: 35px

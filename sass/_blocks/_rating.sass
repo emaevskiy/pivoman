@@ -1,0 +1,91 @@
+@import "../vars"
+
+.rating
+  display: flex
+  align-items: center
+  margin-bottom: 15px
+  transition: .3s
+  &:hover
+    text-decoration: none
+    opacity: .8
+    transition: .3s
+
+.rating__value
+  position: relative
+  width: 105px
+  height: 20px
+  background: url('../img/star.svg') center left repeat-x
+  background-size: 22px
+  &::after
+    content: ''
+    display: block
+    position: absolute
+    width: 0
+    height: 20px
+    background: url('../img/star-fill.svg') center left repeat-x
+    background-size: 22px
+    top: 0
+    left: 0
+  &--bad
+    &::after
+      width: 22px
+  &--poor
+    &::after
+      width: 44px
+  &--regular
+    &::after
+      width: 66px
+  &--good
+    &::after
+      width: 88px
+  &--gorgeous
+    &::after
+      width: 105px
+
+.rating__form
+  position: relative
+  display: flex
+
+.rating__form-value
+  position: absolute
+  left: 0
+  top: 0
+  bottom: 0
+  margin: auto
+  &::after
+    transition: .5s
+
+.rating__item
+  position: relative
+  display: block
+  opacity: .0
+  width: 22px
+  height: 22px
+  margin-right: 0px
+  cursor: pointer
+  z-index: 2
+  &:nth-of-type(1)
+    &:hover ~ .rating__form-value, &:checked ~ .rating__form-value
+      &::after
+        width: 22px
+  &:nth-of-type(2)
+    &:hover ~ .rating__form-value, &:checked ~ .rating__form-value
+      &::after
+        width: 44px
+  &:nth-of-type(3)
+    &:hover ~ .rating__form-value, &:checked ~ .rating__form-value
+      &::after
+        width: 66px
+  &:nth-of-type(4)
+    &:hover ~ .rating__form-value, &:checked ~ .rating__form-value
+      &::after
+        width: 88px
+  &:nth-of-type(5)
+    &:hover ~ .rating__form-value, &:checked ~ .rating__form-value
+      &::after
+        width: 105px
+
+.rating__count
+  font-size: 18px
+  color: $color-3
+  margin-left: 20px

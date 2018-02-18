@@ -1,0 +1,56 @@
+@import "../vars"
+
+.geo-position
+  position: relative
+  max-width: 330px
+  font-size: 16px
+  font-weight: 600
+  color: #1c1c1a
+  padding: 5px 5px 5px 25px
+  margin-left: 30px
+  &::before
+    content: ''
+    display: block
+    position: absolute
+    width: 16px
+    height: 16px
+    left: 0
+    top: 0
+    bottom: 0
+    margin: auto
+    background: url('../img/maps-and-flags.svg') center no-repeat
+    background-size: 16px
+
+.geo-position__item
+  display: block
+  color: #1c1c1a
+  border-bottom: 1px dashed rgba(0, 0, 0, 0)
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+  transition: opacity .3s
+  &:hover, &:focus
+    color: #1c1c1a
+    text-decoration: none
+    border-bottom: 1px dashed #1c1c1a
+    transition: opacity .3s
+  &:active
+    opacity: .6
+
+
+
+@media only screen and (max-width : 992px)
+
+  .geo-position
+    max-width: 280px
+    font-size: 14px
+    align-self: left
+    margin: 0
+    margin-bottom: 10px
+
+  .geo-position__item
+    color: #ffffff
+    border-bottom: 1px dashed rgba(0, 0, 0, 0)
+    &:hover, &:focus
+      color: #ffffff
+      border-bottom: 1px dashed #ffffff

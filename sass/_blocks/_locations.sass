@@ -1,0 +1,85 @@
+@import "../vars"
+
+.locations
+  position: relative
+  display: block
+  padding: 0 2px 0 0
+
+.locations__count
+  position: relative
+  display: inline-block
+  margin-left: 25px
+  padding-left: 11px
+  &:before
+    position: absolute
+    content: ''
+    display: block
+    top: 0
+    bottom: 0
+    left: 0
+    margin: auto
+    width: 7px
+    height: 7px
+    border-radius: 10px
+    background: #417505
+
+.locations__region
+  font-size: $font-size-s
+  // font-weight: 600
+  color: $color-1
+
+.locations__dropdown
+  & .locations__group-title
+    display: inline-block
+    width: auto
+    position: relative
+    height: 30px
+    padding-right: 30px
+    color: $color-1
+    padding-left: 35px
+    &:hover, &:focus
+      color: $color-1
+      opacity: .7
+      cursor: pointer
+      text-decoration: none
+    &::after
+      position: absolute
+      content: ''
+      display: block
+      width: 14px
+      height: 5px
+      top: 0
+      bottom: 0
+      right: 0px
+      border-top: 5px solid $color-1
+      border-left: 7px solid transparent
+      border-right: 7px solid transparent
+      margin: auto
+      transition: .3s
+  &--active > .locations__group-title::after
+      transform: rotate(-180deg)
+      transition: .3s
+
+.locations__group
+  display: none
+  margin: 3px 0
+  padding: 3px 0 3px 15px
+  box-shadow: inset 0 0 5px 2px #131312
+
+.locations__item
+  font-size: $font-size-s
+  font-weight: 400
+  color: $color-1
+
+.locations__link
+  display: inline-block
+  height: 30px
+  color: $color-1
+  padding-left: 35px
+  &:hover, &:focus
+    color: $color-1
+    opacity: .7
+    cursor: pointer
+    text-decoration: none
+
+// @media only screen and (max-width : 768px)

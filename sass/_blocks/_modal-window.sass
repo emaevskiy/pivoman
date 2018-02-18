@@ -1,0 +1,113 @@
+@import "../vars"
+
+.modal-window
+  min-width: 320px
+  position: fixed
+  display: none
+  align-items: center
+  justify-content: center
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  background: rgba(28, 28, 26, 0.65)
+  z-index: 10
+
+.modal-window__bg
+  position: absolute
+  display: none
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 0
+
+.modal-window__wrapper
+  display: flex
+  flex-direction: column
+  width: 100%
+  max-width: 768px
+  padding: 50px 70px 35px 70px
+  background: #ffffff
+  margin: 0 auto
+  border: solid 5px $color-2
+  border-radius: 7px
+  box-shadow: 0 2px 10px 0 #1c1c1a
+  z-index: 1
+  &--age18
+    display: none
+    justify-content: space-between
+    min-height: 400px
+    align-items: center
+    background: url('../img/18.svg') right repeat-y #ffffff
+    background-size: 109px 81px
+  &--callback
+    display: none
+    max-width: 400px
+    align-items: center
+
+.modal-window__title
+  font-size: $font-size-xl
+  font-family: KellySlab
+  text-align: center
+  margin-bottom: 10px
+
+.modal-window__text
+  font-size: $font-size-l
+  text-align: center
+  margin-bottom: 10px
+
+.modal-window__inner
+  display: flex
+  justify-content: space-between
+  width: 100%
+  max-width: 416px
+
+.modal-window__btn
+  min-width: 100px
+  border: 2px solid $color-2
+  color: $color-2
+  &:hover, &:focus
+    color: $color-1
+    box-shadow: 0 1px 1px 0px rgba(0, 0, 0, .2), inset 0px -48px 0px #ae0725
+  &:active
+    opacity: .7
+  &:nth-of-type(1)
+    color: #417505
+    border: 2px solid #417505
+    background: rgba(#417505, .1)
+    &:hover, &:focus
+      color: #ffffff
+      box-shadow: 0 1px 1px 0px rgba(0, 0, 0, .2), inset 0px -48px 0px #417505
+  &:nth-of-type(2)
+    color: #ae0725
+    border: 2px solid #ae0725
+    background: rgba(#ae0725, .0)
+    opacity: .3
+    &:hover, &:focus
+      color: #ffffff
+      opacity: .8
+      box-shadow: 0 1px 1px 0px rgba(0, 0, 0, .2), inset 0px -48px 0px #ae0725
+
+.modal-window__info
+  margin-top: 20px
+  font-size: $font-size-s
+  color: $color-2
+  text-align: center
+
+
+
+@media only screen and (max-width : 768px)
+
+  .modal-window__wrapper
+    width: auto
+    padding: 20px 30px
+    margin: 0 10px
+
+  .modal-window__title
+    font-size: 24px
+    margin-bottom: 10px
+
+  .modal-window__text
+    font-size: 20px
+    margin-bottom: 10px

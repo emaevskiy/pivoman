@@ -1,0 +1,133 @@
+@import "../vars"
+
+.navbar
+  background: #1c1c1a
+  position: sticky
+  top: 0
+  z-index: 4
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .5)
+
+.navbar__wrapper
+  display: flex
+  align-items: center
+  padding: 15px 30px
+  max-width: 1440px
+  margin: 0 auto
+
+.navbar__logo
+  margin-right: 55px
+  min-width: 140px
+
+.navbar__inner
+  display: flex
+  align-items: center
+  width: 100%
+
+.navbar__list
+  display: flex
+  align-items: center
+  width: 100%
+  max-width: 800px
+  margin-right: 50px
+  justify-content: space-between
+
+.navbar__link
+  display: flex
+  align-items: center
+  font-size: 18px
+  // font-weight: 600
+  color: $color-1
+  padding: 0 10px
+  transition: opacity .3s, color .3s
+  &:hover, &:focus
+    color: $color-1
+    opacity: .7
+    text-decoration: none
+    transition: opacity .3s, color .3s
+  &:active
+    opacity: .5
+
+.navbar__link-ico
+  width: 32px
+  height: 29px
+  object-fit: contain
+  margin-right: 14px
+
+.navbar__search
+  position: relative
+  display: none
+  width: 100%
+  height: 36px
+  max-width: 200px
+  min-width: 160px
+  background: rgba(139, 121, 86, .3)
+  border: 1px solid #191919
+  // border-bottom: 1px solid #cccccc
+  padding: 5px 10px
+  font-size: 16px
+  color: $color-2
+  box-shadow: inset 0 1px 6px 2px rgba(0, 0, 0, .6)
+  margin-left: auto
+  margin-right: 30px
+  &:hover, &:focus
+    color: $color-2
+    text-decoration: none
+  &::after
+    content: ''
+    display: block
+    position: absolute
+    width: 20px
+    height: 20px
+    right: -30px
+    top: 0
+    bottom: 0
+    margin: auto
+    background: url('../img/search.svg') center no-repeat
+    background-size: contain
+
+
+@media only screen and (max-width : 1200px)
+
+  // .navbar__link-ico
+  //   display: none
+
+@media only screen and (max-width : 992px)
+
+  .navbar__wrapper
+    justify-content: space-between
+    padding: 11px 30px
+
+  .navbar__inner
+    position: fixed
+    flex-direction: column
+    top: 250px
+    left: -320px
+    height: 200vh
+    background: rgba($color-3, .98)
+    width: 320px
+    z-index: 10
+    transition: left .5s
+    &--active
+      left: 0px
+      transition: left .5s
+
+  .navbar__list
+    flex-direction: column
+    margin: 0
+    line-height: 2
+    align-items: stretch
+    padding: 5px 0
+    order: 1
+
+  .navbar__link
+    font-size: 16px
+    padding-left: 20px
+    font-weight: 600
+
+  .navbar__link-ico
+    display: none
+
+  .navbar__search
+    margin: 20px 0 0 20px
+    align-self: flex-start
+    max-width: 250px

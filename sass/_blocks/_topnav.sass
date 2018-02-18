@@ -1,0 +1,86 @@
+@import "../vars"
+
+.topnav
+  background: $color-2
+  border-top: 0px solid #1c1c1a
+
+.topnav__wrapper
+  display: flex
+  justify-content: space-between
+  align-items: center
+  max-width: 1440px
+  padding: 0 30px
+  margin: 0 auto
+
+.topnav__list
+  display: flex
+  align-items: center
+  height: 60px
+  width: 100%
+  max-width: 800px
+  justify-content: space-between
+  margin-left: 195px
+
+.topnav__link
+  display: block
+  font-size: 16px
+  font-weight: 600
+  color: $color-3
+  padding: 0 10px
+  transition: opacity .3s, color .3s
+  &:hover, &:focus
+    color: $color-1
+    text-decoration: none
+    transition: opacity .3s, color .3s
+  &:active
+    opacity: .5
+
+
+@media only screen and (max-width : 1200px)
+
+  .topnav__list
+    margin-left: 0
+
+@media only screen and (max-width : 992px)
+
+  .topnav
+    position: fixed
+    width: 320px
+    height: 194px
+    top: 56px
+    left: -320px
+    z-index: 4
+    background: rgba($color-3, .98)
+    transition: left .5s
+    &--active
+      left: 0px
+      transition: left .5s
+
+  .topnav__wrapper
+    display: flex
+    flex-direction: column-reverse
+    padding: 10px 20px 0 20px
+
+  .topnav__list
+    max-width: none
+    width: calc(100% + 40px)
+    height: auto
+    display: flex
+    flex-direction: column
+    align-items: stretch
+    padding: 5px 0
+    border-top: 1px solid #333333
+    border-bottom: 1px solid #333333
+    line-height: 2
+    margin-left: -20px
+    margin-right: -20px
+
+  .topnav__link
+    font-size: 16px
+    font-weight: 600
+    padding-left: 20px
+    color: $color-1
+    &:hover, &:focus
+      opacity: .7
+    &:active
+      opacity: .5

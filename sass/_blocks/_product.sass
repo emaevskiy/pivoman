@@ -1,0 +1,246 @@
+@import "../vars"
+
+.product
+  padding: 50px 0
+
+.product__wrapper
+  background: rgba(50, 50, 50, .1)
+  padding: 50px 0 0px 0
+
+.product__inner
+  padding: 0 25px
+  max-width: 1250px
+  margin: 0 auto
+  display: flex
+  justify-content: space-between
+  &--desc
+    padding: 0 10px
+
+.product__img
+  width: 345px
+  height: 460px
+  object-fit: cover
+  margin-right: 25px
+  margin-bottom: 25px
+
+.product__info
+  width: calc(100% - 370px)
+  padding-left: 10px
+  margin-bottom: 25px
+
+.product__tags-list
+  display: flex
+  flex-wrap: wrap
+  margin-bottom: 10px
+
+.product__tag
+  display: block
+  margin-right: 10px
+  background: #ffffff
+  color: $color-3
+  font-size: 18px
+  padding: 3px 10px
+  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, .2)
+  border: none
+  border-radius: 3px
+  margin-bottom: 10px
+  white-space: nowrap
+  transition: .3s
+  &:hover, &:focus
+    text-decoration: none
+    color: $color-3
+    opacity: .7
+    transition: .3s
+  &:active
+    opacity: .3
+  &--special
+    color: #ff6666
+    &:hover
+      color: #ff6666
+
+.product__brend
+  display: inline-block
+  font-size: 19px
+  font-weight: 600
+  color: $color-3
+  text-decoration: underline
+  margin-bottom: 10px
+  transition: .3s
+  &:hover
+    color: $color-3
+    opacity: .6
+    transition: .3s
+
+.product__title
+  font-size: 30px
+  font-weight: 600
+  margin-bottom: 5px
+
+.product__table
+  font-size: 18px
+  & tr
+    display: block
+    margin-bottom: 10px
+  & td
+    display: inline-block
+    margin-right: 10px
+
+.product__adress-title
+  font-size: 20px
+  font-weight: 600
+  margin: 10px 0 25px 0
+
+.product__adress-list
+  display: flex
+  flex-wrap: wrap
+  margin: 10px 0
+  & > li
+    display: inline-block
+    &:nth-of-type(n + 6)
+      display: none
+    &:last-of-type
+      display: inline-block
+  &--all
+    & > li
+      &:nth-of-type(n + 6)
+        display: inline-block
+
+.product__adress
+  font-size: 16px
+
+.product__column
+  width: auto
+  padding: 0 15px
+
+.product__desc-title
+  font-size: 28px
+  margin-bottom: 5px
+
+.product__desc
+  font-size: 20px
+  margin-bottom: 50px
+
+@media only screen and (max-width : 1200px)
+
+  .product__inner
+    max-width: 992px
+
+  .product__img
+    width: 300px
+    height: 400px
+    margin-bottom: 25px
+
+  .product__info
+    width: calc(100% - 325px)
+    margin-bottom: 25px
+
+  .product__brend
+    font-size: 19px
+
+  .product__title
+    margin-bottom: 5px
+
+  .product__table
+    font-size: 18px
+    & tr
+      margin-bottom: 10px
+    & td
+      margin-right: 10px
+
+  .product__desc-title
+    font-size: 28px
+    margin-bottom: 5px
+
+  .product__desc
+    font-size: 20px
+    margin-bottom: 50px
+
+@media only screen and (max-width : 992px)
+
+  .product__inner
+    max-width: 768px
+
+  .product__img
+    width: 262px
+    height: 350px
+    margin-bottom: 25px
+
+  .product__info
+    width: calc(100% - 287px)
+    margin-bottom: 25px
+
+  .product__tag
+    font-size: 16px
+
+  .product__brend
+    font-size: 18px
+
+  .product__title
+    font-size: 28px
+    margin-bottom: 5px
+
+  .product__table
+    font-size: 16px
+    & tr
+      margin-bottom: 10px
+    & td
+      margin-right: 10px
+
+  .product__adress
+    font-size: 14px
+
+  .product__desc-title
+    font-size: 28px
+    margin-bottom: 5px
+
+  .product__desc
+    font-size: 20px
+    margin-bottom: 50px
+
+
+@media only screen and (max-width : 768px)
+
+  .product__inner
+    flex-direction: column
+    flex-wrap: wrap
+
+  .product__img
+    width: 100%
+    height: auto
+    margin: 0 auto
+    margin-bottom: 50px
+
+  .product__info
+    width: 100%
+    padding: 0
+    margin-bottom: 25px
+
+  .product__brend
+    font-size: 18px
+    margin-bottom: 15px
+
+  .product__title
+    font-size: 28px
+    margin-bottom: 15px
+
+  .product__table
+    font-size: 16px
+    & tr
+      margin-bottom: 10px
+    & td
+      margin-right: 10px
+
+  .product__adress
+    font-size: 14px
+
+  .product__column
+    width: 100%
+    padding: 0 40px
+
+  .product__desc-title
+    font-size: 24px
+    margin-bottom: 5px
+
+  .product__desc
+    font-size: 18px
+    margin-bottom: 50px
