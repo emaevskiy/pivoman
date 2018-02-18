@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="19px" height="24px" viewBox="0 0 19 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.1 (35376) - http://www.bohemiancoding.com/sketch -->
+    <title>maps-and-flags</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="menu-copy" transform="translate(-1108.000000, -25.000000)" stroke="#1C1C1A">
+            <g id="Group-2" transform="translate(1109.000000, 26.000000)">
+                <g id="maps-and-flags">
+                    <g id="Layer_1">
+                        <path d="M16.577,8.35531081 C16.577,15.0457194 9.087375,21.2419474 9.087375,21.2419474 C8.64975,21.6040215 7.93354167,21.6040215 7.49591667,21.2419474 C7.49591667,21.2419474 0.00629166667,15.0457194 0.00629166667,8.35531081 C0.006375,3.74078822 3.71583333,0 8.29166667,0 C12.8675,0 16.577,3.74078822 16.577,8.35531081 Z" id="Shape" fill="#EFD8AB"></path>
+                        <path d="M8.29166667,12.5589337 C5.99316667,12.5589337 4.12329167,10.6731818 4.12329167,8.35535283 C4.12329167,6.03752386 5.99325,4.15168792 8.29166667,4.15168792 C10.5900833,4.15168792 12.4600417,6.03743982 12.4600417,8.35526879 C12.4600417,10.6730978 10.5901667,12.5589337 8.29166667,12.5589337 Z" id="Shape" fill="#8B7956"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
